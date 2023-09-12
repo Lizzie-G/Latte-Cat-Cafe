@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap'); /* Tipografía para titulos font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap'); /* Tipografía para textos  font-family: 'Pompiere', cursive;*/ 
+
+h1, h2, h3{
+    font-family: 'Comfortaa', cursive;
+}
+
+p, a, li{
+    font-family: 'Pompiere', cursive;
+}
