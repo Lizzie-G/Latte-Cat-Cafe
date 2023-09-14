@@ -1,10 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap'); /* Tipografía para titulos font-family: 'Comfortaa', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap'); /* Tipografía para textos  font-family: 'Pompiere', cursive;*/ 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/* Tipografía para titulos font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+/* Tipografía para textos  font-family: 'Pompiere', cursive;*/
 
-h1, h2, h3{
-    font-family: 'Comfortaa', cursive;
+:root {
+    --fondo: #efe1cf;
+    --hover: #C8AE7D;
+    --titulos: #765827;
+    --subtitulos: #65451F;
 }
 
-p, a, li{
+body {
     font-family: 'Pompiere', cursive;
+    background-color: var(--fondo);
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    background-color: var(--subtitulos);
+}
+
+header ul{
+    display: block;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 0.3em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--fondo);
+    padding: 1em;
+    /* font-family: 'Comfortaa', cursive; */
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--fondo);
+    padding: 1em;
+}
+
+#contenidoPrincipal {
+    display: flex;
+    margin: 1em;
+}
+
+#contenidoPrincipal img {
+    display: flex;
+}
+
+#contenidoPrincipal h1 {
+    display: inline-block;
 }
