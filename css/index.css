@@ -18,8 +18,14 @@ body {
 
 header {
     width: 100%;
-    height: 30px;
+    height: 2em;
     background-color: var(--subtitulos);
+    position: fixed;
+}
+
+header nav{
+    height: 3em;
+
 }
 
 header ul{
@@ -29,23 +35,18 @@ header ul{
 
 header ul li{
     display: inline-block;
-    padding: 0.3em;
 }
 
 header ul li a {
     text-decoration: none;
     color: var(--fondo);
-    padding: 1em;
+    align-content: center;
+    padding-right: 2em;
     /* font-family: 'Comfortaa', cursive; */
 }
 
-header ul li a {
-    text-decoration: none;
-    color: var(--fondo);
-    padding: 1em;
-}
-
 #contenidoPrincipal {
+    padding-top: 3.5em;
     display: flex;
     margin: 1em;
 }

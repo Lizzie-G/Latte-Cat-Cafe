@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/* Tipografía para titulos font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+/* Tipografía para textos  font-family: 'Pompiere', cursive;*/
+
+:root {
+    --fondo: #efe1cf;
+    --hover: #C8AE7D;
+    --titulos: #765827;
+    --subtitulos: #65451F;
+}
+
+*{
+    width: 100%;
+}
+
+body {
+    font-family: 'Pompiere', cursive;
+    background-color: var(--fondo);
+    padding-top: 40px;
+}
+
+header {
+    background-color: var(--subtitulos);
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+header ul {
+    display: inline;
+    height: 44px;
+}
+
+header ul li {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+header ul li :hover {
+    background-color: var(--hover);
+    color: var(--fondo);
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--parrafos);
+    padding: 11px;
+}
+
+header ul li a:hover {
+    color: var(--subtitulos);
+    background-color: var(--fondo);
+}
+
+
+.grid .header{
+    background-color: orange;
+    grid-area: header;
+    display: inline;
+}
+
+.grid .header img{
+    width: 150px;
+    float: left;
+    padding-left: 80px;
+}
+
+.grid .header h1{
+    font-size: xx-large;
+    color: var(--titulos);
+    width: 150px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 120px;
+}
+
+.grid .conten{
+    background-color: yellow;
+    grid-area: conten;
+}
+
+.grid .aside1{
+    background-color: greenyellow;
+    grid-area: aside1;
+}
+
+.grid .info{
+    background-color: purple;
+    grid-area: info;
+}
+
+.grid .aside2{
+    background-color: blue;
+    grid-area: aside2;
+}
+
+.grid .footer{
+    background-color: green;
+    grid-area: footer;
+    display: inline-flex;
+}
+
+.grid .footer img{
+    float: left;
+}
+
+.grid .footer #nuestrosDatos ul{
+    display: inline;
+}
+
+.grid .footer #nuestrosDatos ul li{
+    display: block;
+}
+
+.grid .footer #redes ul{
+   display: inline;
+}
+
+.grid .footer #redes ul li{
+    display: inline;
+    text-align: center;
+}
+
+.grid .footer #redes ul li img{
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+
+.grid .footer #redes p{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+ }
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5);
+    grid-template-areas: "header header header"
+                         "conten conten conten"
+                         "aside1 aside1 aside1"
+                         "info info info"
+                         "aside2 aside2 aside2"
+                         "footer footer footer";
+}
