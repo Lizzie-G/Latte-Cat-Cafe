@@ -80,8 +80,21 @@ header ul li a:hover {
 }
 
 .grid .conten{
-    background-color: yellow;
+    background-color: white;
     grid-area: conten;
+    display: inline;
+}
+
+.grid .conten img{
+    width: 150px;
+    float: left;
+    padding-left: 80px;
+}
+
+.grid .conten p{
+    font-size: medium;
+    color: var(--hover);
+    float: right;
 }
 
 .grid .aside1{
