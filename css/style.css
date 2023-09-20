@@ -118,7 +118,8 @@ header ul li a:hover {
 }
 
 .grid .footer #redes ul{
-   display: inline;
+   display: inline-block;
+
 }
 
 .grid .footer #redes ul li{
@@ -136,8 +137,7 @@ header ul li a:hover {
 .grid .footer #redes p{
     display: block;
     text-align: center;
-    padding-top: 5px;
- }
+}
 
 .grid {
     display: grid;
