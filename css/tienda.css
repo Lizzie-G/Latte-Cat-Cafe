@@ -17,7 +17,7 @@
 body {
     font-family: 'Pompiere', cursive;
     background-color: var(--fondo);
-    padding-top: 40px;
+    padding-top: 45px;
 }
 
 header {
@@ -61,42 +61,38 @@ header ul li a:hover {
 .grid .header{
     background-color: orange;
     grid-area: header;
-    display: inline;
+    display: grid;
+    place-content: center;
 }
 
 .grid .header img{
     width: 150px;
-    float: left;
-    padding-left: 80px;
-}
-
-.grid .header h1{
-    font-size: xx-large;
-    color: var(--titulos);
-    width: 150px;
-    float: right;
-    padding-top: 10px;
-    padding-right: 120px;
+    text-align: center;
 }
 
 .grid .conten{
     background-color: white;
     grid-area: conten;
-    display: inline;
-}
-
-.grid .conten ul{
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: fit-content;
-    height: 800px;
-    
+    place-content: center;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 15px;
 }
 
-.grid .conten p{
-    font-size: medium;
-    color: var(--hover);
-    float: right;
+.grid .conten .producto {
+    border: 2px solid #000;
+    width: 200px;
+    height: 300px;
+}
+
+.grid .conten .producto img{
+    width: 100%;
+    height: 100px;
+}
+
+.grid .conten .producto h4{
+    color: var(--subtitulos);
+    font-family: 'Comfortaa', cursive;
 }
 
 .grid .aside1{
@@ -104,14 +100,12 @@ header ul li a:hover {
     grid-area: aside1;
 }
 
-.grid .info{
-    background-color: purple;
-    grid-area: info;
-}
-
 .grid .aside2{
     background-color: blue;
     grid-area: aside2;
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
 }
 
 .grid .footer{
@@ -133,20 +127,23 @@ header ul li a:hover {
 }
 
 .grid .footer #redes ul{
-   display: inline-block;
-
+   display: inline;
 }
 
 .grid .footer #redes ul li{
-    display: inline;
+    display: inline-block;
     text-align: center;
 }
 
 .grid .footer #redes ul li img{
-    display: block;
     width: 32px;
     height: 32px;
     padding: 4px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .grid .footer #redes p{
@@ -157,12 +154,12 @@ header ul li a:hover {
 .grid {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5);
-    grid-template-areas: "header header header"
-                         "conten conten conten"
-                         "aside1 aside1 aside1"
-                         "info info info"
-                         "aside2 aside2 aside2"
-                         "footer footer footer";
+    grid-template-areas: "header conten conten conten conten"
+                         "aside1 conten conten conten conten"
+                         "aside1 conten conten conten conten"
+                         "aside1 conten conten conten conten"
+                         "aside2 aside2 aside2 aside2 aside2"
+                         "footer footer footer footer footer";
 }
