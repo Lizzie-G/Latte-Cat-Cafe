@@ -85,12 +85,14 @@ header ul li a:hover {
     display: inline;
 }
 
-.grid .conten ul{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+.grid .conten table{
+    width: 100%;
+    border: #65451F solid 2px;
+    padding: 5px;
+}
+
+.grid .conten table img{
     width: fit-content;
-    height: 800px;
-    
 }
 
 .grid .conten p{
@@ -122,6 +124,9 @@ header ul li a:hover {
 
 .grid .footer img{
     float: left;
+    width: auto;
+    height: 140px;
+    margin-right: 10px;
 }
 
 .grid .footer #nuestrosDatos ul{
@@ -133,13 +138,13 @@ header ul li a:hover {
 }
 
 .grid .footer #redes ul{
-   display: inline-block;
-
+    display: inline-block;
+    text-align: center;
 }
 
 .grid .footer #redes ul li{
     display: inline;
-    text-align: center;
+    justify-content: center;
 }
 
 .grid .footer #redes ul li img{
@@ -147,6 +152,11 @@ header ul li a:hover {
     width: 32px;
     height: 32px;
     padding: 4px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .grid .footer #redes p{
