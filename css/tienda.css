@@ -87,7 +87,9 @@ header ul li a:hover {
 
 .grid .conten .producto img{
     width: 100%;
-    height: 100px;
+    height: 150px;
+    overflow: hidden;
+    background-size: cover;
 }
 
 .grid .conten .producto h4{
