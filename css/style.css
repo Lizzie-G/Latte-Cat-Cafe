@@ -10,7 +10,7 @@
     --subtitulos: #65451F;
 }
 
-*{
+* {
     width: 100%;
 }
 
@@ -58,19 +58,19 @@ header ul li a:hover {
 }
 
 
-.grid .header{
+.grid .header {
     background-color: orange;
     grid-area: header;
     display: inline;
 }
 
-.grid .header img{
+.grid .header img {
     width: 150px;
     float: left;
     padding-left: 80px;
 }
 
-.grid .header h1{
+.grid .header h1 {
     font-size: xx-large;
     color: var(--titulos);
     width: 150px;
@@ -79,75 +79,70 @@ header ul li a:hover {
     padding-right: 120px;
 }
 
-.grid .conten{
+.grid .conten {
     background-color: white;
     grid-area: conten;
     display: inline;
 }
 
-.grid .conten table{
-    width: 100%;
-    border: #65451F solid 2px;
-    padding: 5px;
+.grid .conten table {
+    background-color: #000;
+    color: var(--hover);
+    font-size: 20px;
+    table-layout: fixed;
 }
 
-.grid .conten table img{
-    width: fit-content;
+.grid .conten td {
+    text-align: center;
 }
 
-.grid .conten p{
+.grid .conten td img {
+    overflow: hidden;
+}
+
+.grid .conten p {
     font-size: medium;
     color: var(--hover);
     float: right;
 }
 
-.grid .aside1{
+.grid .aside1 {
     background-color: greenyellow;
     grid-area: aside1;
 }
 
-.grid .info{
+.grid .info {
     background-color: purple;
     grid-area: info;
 }
 
-.grid .aside2{
+.grid .aside2 {
     background-color: blue;
     grid-area: aside2;
 }
 
-.grid .footer{
+.grid .footer {
     background-color: green;
     grid-area: footer;
     display: inline-flex;
 }
 
-.grid .footer img{
+.grid .footer img {
     float: left;
     width: auto;
     height: 140px;
     margin-right: 10px;
 }
 
-.grid .footer #nuestrosDatos ul{
+.grid .footer #nuestrosDatos ul {
     display: inline;
 }
 
-.grid .footer #nuestrosDatos ul li{
+.grid .footer #nuestrosDatos ul li {
     display: block;
 }
 
-.grid .footer #redes ul{
-    display: inline-block;
-    text-align: center;
-}
-
-.grid .footer #redes ul li{
-    display: inline;
-    justify-content: center;
-}
-
-.grid .footer #redes ul li img{
+.grid .footer #redes img {
     display: block;
     width: 32px;
     height: 32px;
@@ -159,7 +154,7 @@ header ul li a:hover {
     -o-border-radius: 10px;
 }
 
-.grid .footer #redes p{
+.grid .footer #redes p {
     display: block;
     text-align: center;
 }
@@ -170,9 +165,9 @@ header ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5);
     grid-template-areas: "header header header"
-                         "conten conten conten"
-                         "aside1 aside1 aside1"
-                         "info info info"
-                         "aside2 aside2 aside2"
-                         "footer footer footer";
+        "conten conten conten"
+        "aside1 aside1 aside1"
+        "info info info"
+        "aside2 aside2 aside2"
+        "footer footer footer";
 }
