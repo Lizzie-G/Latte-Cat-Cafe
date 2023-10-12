@@ -111,6 +111,8 @@ header ul li a:hover {
 .grid .aside1 {
     background-color: greenyellow;
     grid-area: aside1;
+    text-align: center;
+    padding: 10px 50px;
 }
 
 .grid .info {
