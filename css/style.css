@@ -28,6 +28,7 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
+    left: 0;
 }
 
 header ul {
@@ -44,6 +45,7 @@ header ul li {
 header ul li :hover {
     background-color: var(--hover);
     color: var(--fondo);
+    margin: 20px;
 }
 
 header ul li a {
@@ -127,11 +129,11 @@ header ul li a:hover {
     display: inline-flex;
 }
 
-.grid .footer img {
+.grid .footer #imgFooter {
     float: left;
     width: auto;
     height: 140px;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 .grid .footer #nuestrosDatos ul {
@@ -142,8 +144,16 @@ header ul li a:hover {
     display: block;
 }
 
+.grid .footer #redes {
+    display: inline;
+    text-align: center;
+    width: 400px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
 .grid .footer #redes img {
-    display: block;
+    display: inline-block;
     width: 32px;
     height: 32px;
     padding: 4px;
@@ -155,8 +165,7 @@ header ul li a:hover {
 }
 
 .grid .footer #redes p {
-    display: block;
-    text-align: center;
+    display: inline-block;
 }
 
 .grid {
