@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tienda.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
     <title>Tienda</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
 </head>
 <body>
     
@@ -16,8 +15,8 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="adopcion.html">Adopción</a></li>
-                <li><a href="reservacion.html">Reservación</a></li>
+                <li><a href="adopta.html">Adopción</a></li>
+                <li><a href="reserva.html">Reservación</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -77,6 +76,7 @@
                 <div>
                     <h4>TAZA CON TAPA</h4>
                     <p>Taza ceramica con tapa. Ideal para mantener el calor de tu bebida.Apto microondas</p>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -84,25 +84,32 @@
                 <div>
                     <h4>COLGANTE</h4>
                     <p>Gato decorativo para taza o vaso.</p>
+                    <br><br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
                 <img src="/img/tienda/Articulos/camaventana.jpg" alt="camagatoventana ">
                 <div>
                     <h4>CAMA COLGANTE</h4>
-                    <p>Novedosa cama hamaca para gatos. Diseñada para adherirse instantáneamente a cualquier ventana.</p>               </div>
+                    <p>Novedosa cama hamaca para gatos. Diseñada para adherirse instantáneamente a cualquier ventana.</p>           
+                    <p class="precio">$ 1000,00</p>    
+                </div>
             </div>
             <div class="producto">
                 <img src="/img/tienda/Articulos/librodegatos.jpg" alt="librodegatos ">
                 <div>
-                    <h4>LIBRO - EL GATO QUE REGALABA SONRISAS - RACHEL WELLS</h4>
+                    <h4>EL GATO QUE REGALABA SONRISAS</h4>
                     <p>Puede un gato cambiar tu vida? Dejaté sorprender. </p>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto"><img src="/img/tienda/Articulos/setjuguetes.jpg" alt="setjuguetes ">
                 <div>
                     <h4>SET JUGUETES</h4>
                     <p>Set con variedad de juguetes para que tu gato se divierta.</p>
+                    <br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -110,6 +117,8 @@
                 <div>
                     <h4>LAPICERAS</h4>
                     <p>Hermosa lapiceras de varios colores.</p>
+                    <br><br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -117,6 +126,8 @@
                 <div>
                     <h4>CUADERNO</h4>
                     <p>Version rayado o cuadriculado.</p>
+                    <br><br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -124,6 +135,8 @@
                 <div>
                     <h4>STICKERS</h4>
                     <p>Variedad de stickers, ideal para regalar.</p>
+                    <br><br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -131,6 +144,8 @@
                 <div>
                     <h4>CAT CREPE</h4>
                     <p>Delicioso crepe relleno de nutella o dulce de leche a eleccion.</p>
+                    <br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -138,6 +153,8 @@
                 <div>
                     <h4>CAT ALFAJOR</h4>
                     <p>Espectacular y exquisito aljafor, no te lo podes perder.</p>
+                    br
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -145,6 +162,8 @@
                 <div>
                     <h4>CAT CAFE 3D</h4>
                     <p>Podes elegir tu latte o flat white version 3D.</p>
+                    <br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
             <div class="producto">
@@ -152,6 +171,8 @@
                 <div>
                     <h4>CAT CAFE HELADO</h4>
                     <p>Ideal para los amantes del cafe helado.</p>
+                    <br><br>
+                    <p class="precio">$ 1000,00</p>
                 </div>
             </div>
         </section>
@@ -161,7 +182,7 @@
         </section>
 
         <footer class="footer">
-            <img src="" alt="Imagen del logo del establecimiento">
+            <img id="imgFooter" src="../img/logo.jpeg" alt="Imagen del logo del establecimiento">
             <div id="nuestrosDatos"> 
                 <ul>
                     <li>Contacto</li>
@@ -171,15 +192,14 @@
                 </ul>
             </div>
             <div id="redes">
-                <ul>
-                    <li><a href=""><img src="../img/redes/facebook.jpg" alt="Imagen del logo de Instagram"></a></li>
-                    <li><a href=""><img src="../img/redes/instagram.jpg" alt="Imagen del logo de Facebook"></a></li>
-                    <li><a href=""><img src="../img/redes/linkedin.jpg" alt="Imagen del logo de TikTok"></a></li>
-                    <li><a href=""><img src="../img/redes/whatsapp.jpg" alt="Imagen del logo de Twitter"></a></li>
-                </ul>
+                    <a href=""><img src="../img/redes/facebook.jpg" alt="Imagen del logo de Instagram"></a>
+                    <a href=""><img src="../img/redes/instagram.jpg" alt="Imagen del logo de Facebook"></a>
+                    <a href=""><img src="../img/redes/linkedin.jpg" alt="Imagen del logo de TikTok"></a>
+                    <a href=""><img src="../img/redes/whatsapp.jpg" alt="Imagen del logo de Twitter"></a>
                 <p>Nuestras Redes</p>
             </div>
         </footer>
     </div>
-y>
+</body>
+
 </html>

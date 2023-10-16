@@ -8,16 +8,18 @@
     --hover: #C8AE7D;
     --titulos: #765827;
     --subtitulos: #65451F;
+    --parrafos: #261908;
 }
 
-*{
+* {
     width: 100%;
+    margin: 0px;
 }
 
 body {
     font-family: 'Pompiere', cursive;
     background-color: var(--fondo);
-    padding-top: 45px;
+    padding-top: 55px;
 }
 
 header {
@@ -28,6 +30,7 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
+    left: 0;
 }
 
 header ul {
@@ -44,6 +47,7 @@ header ul li {
 header ul li :hover {
     background-color: var(--hover);
     color: var(--fondo);
+    margin: 20px;
 }
 
 header ul li a {
@@ -71,30 +75,50 @@ header ul li a:hover {
 }
 
 .grid .conten{
-    background-color: white;
     grid-area: conten;
     display: grid;
     place-content: center;
     grid-template-columns: repeat(5, auto);
     grid-gap: 15px;
+    padding: 10px;
 }
 
 .grid .conten .producto {
-    border: 2px solid #000;
+    border: 1px solid var(--titulos);
     width: 200px;
     height: 300px;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--hover);
+    display: block;
 }
 
 .grid .conten .producto img{
-    width: 100%;
+    width: fit-content;
     height: 150px;
-    overflow: hidden;
-    background-size: cover;
+    overflow-x: hidden;
+    object-position: center;
+    padding: 3% 0px;
 }
 
 .grid .conten .producto h4{
     color: var(--subtitulos);
     font-family: 'Comfortaa', cursive;
+    padding-bottom: 3%;
+}
+
+.grid .conten .producto p {
+    padding: 4%;
+}
+
+.grid .conten .producto .precio {
+    color: var(--hover);
+    font-weight: bolder;
+    padding: 10px 0px;
+    object-position: bottom;
+    position: 0px;
+    background-color: var(--parrafos);
+    border: 1px solid var(--subtitulos);
 }
 
 .grid .aside1{
@@ -110,34 +134,41 @@ header ul li a:hover {
     text-align: center;
 }
 
-.grid .footer{
-    background-color: green;
+.grid .footer {
+    background-color: var(--subtitulos);
+    color: var(--fondo);
+    font-size: 18px;    
     grid-area: footer;
     display: inline-flex;
+    bottom: 0;
+    position: 0;
 }
 
-.grid .footer img{
+.grid .footer #imgFooter {
     float: left;
+    width: auto;
+    height: 140px;
+    margin-right: 50px;
 }
 
-.grid .footer #nuestrosDatos ul{
+.grid .footer #nuestrosDatos ul {
     display: inline;
 }
 
-.grid .footer #nuestrosDatos ul li{
+.grid .footer #nuestrosDatos ul li {
     display: block;
 }
 
-.grid .footer #redes ul{
-   display: inline;
-}
-
-.grid .footer #redes ul li{
-    display: inline-block;
+.grid .footer #redes {
+    display: inline;
     text-align: center;
+    width: 400px;
+    margin-top: 30px;
+    margin-right: 50px;
 }
 
-.grid .footer #redes ul li img{
+.grid .footer #redes img {
+    display: inline-block;
     width: 32px;
     height: 32px;
     padding: 4px;
@@ -148,9 +179,8 @@ header ul li a:hover {
     -o-border-radius: 10px;
 }
 
-.grid .footer #redes p{
-    display: block;
-    text-align: center;
+.grid .footer #redes p {
+    display: inline-block;
 }
 
 .grid {
