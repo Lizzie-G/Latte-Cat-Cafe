@@ -70,18 +70,15 @@ header ul li a:hover {
     width: 150px;
     float: left;
     padding-left: 80px;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 .grid .header h1 {
-    font-size: xxx-large;
+    font-size: xx-large;
     color: var(--titulos);
-    width: 250px;
+    width: 150px;
     float: right;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 120px;
-    text-shadow: 2px 2px 5px rgb(16, 73, 36);
 }
 
 .grid .conten {
