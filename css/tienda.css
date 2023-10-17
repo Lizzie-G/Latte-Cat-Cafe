@@ -31,6 +31,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 header ul {
@@ -61,7 +62,6 @@ header ul li a:hover {
     background-color: var(--fondo);
 }
 
-
 .grid .header{
     background-color: orange;
     grid-area: header;
@@ -78,7 +78,7 @@ header ul li a:hover {
     grid-area: conten;
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 15px;
 }
 
@@ -135,40 +135,39 @@ header ul li a:hover {
     box-shadow: 5px 5px 40px 30px var(--parrafos), inset 0px 2px #261908;
 }
 
-.grid .footer {
+footer {
     background-color: var(--subtitulos);
     color: var(--fondo);
-    font-size: 18px;    
-    grid-area: footer;
+    font-size: 18px;
     display: inline-flex;
-    bottom: 0;
-    position: 0;
+    padding: 4px 0px;
+    align-items: center;
 }
 
-.grid .footer #imgFooter {
+footer #imgFooter {
     float: left;
     width: auto;
     height: 140px;
     margin-right: 50px;
 }
 
-.grid .footer #nuestrosDatos ul {
+footer #nuestrosDatos ul {
     display: inline;
+    padding: 0px;
 }
 
-.grid .footer #nuestrosDatos ul li {
+footer #nuestrosDatos ul li {
     display: block;
 }
 
-.grid .footer #redes {
+footer #redes {
     display: inline;
     text-align: center;
     width: 400px;
-    margin-top: 30px;
     margin-right: 50px;
 }
 
-.grid .footer #redes img {
+footer #redes img {
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -180,11 +179,12 @@ header ul li a:hover {
     -o-border-radius: 10px;
 }
 
-.grid .footer #redes p {
+footer #redes p {
     display: inline-block;
 }
 
 .grid {
+    width: 1280px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(5, 1fr);
@@ -193,6 +193,6 @@ header ul li a:hover {
                          "aside1 conten conten conten conten"
                          "aside1 conten conten conten conten"
                          "aside1 conten conten conten conten"
-                         "aside2 aside2 aside2 aside2 aside2"
-                         "footer footer footer footer footer";
+                         "aside2 aside2 aside2 aside2 aside2";
+    margin: auto;
 }
