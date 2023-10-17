@@ -80,7 +80,6 @@ header ul li a:hover {
     place-content: center;
     grid-template-columns: repeat(5, auto);
     grid-gap: 15px;
-    padding: 10px;
 }
 
 .grid .conten .producto {
@@ -108,7 +107,7 @@ header ul li a:hover {
 }
 
 .grid .conten .producto p {
-    padding: 4%;
+    padding-bottom: 6%;
 }
 
 .grid .conten .producto .precio {
@@ -127,11 +126,13 @@ header ul li a:hover {
 }
 
 .grid .aside2{
-    background-color: blue;
     grid-area: aside2;
-    padding: 20px;
     font-size: x-large;
     text-align: center;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    background-color: #C8AE7D;
+    box-shadow: 5px 5px 40px 30px var(--parrafos), inset 0px 2px #261908;
 }
 
 .grid .footer {

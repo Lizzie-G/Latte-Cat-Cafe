@@ -128,6 +128,10 @@ header ul li a:hover {
     grid-row-end: 4;
 }
 
+.grid .conten ul .box4:hover {
+    background-image: url(videos/mimos.mp4);
+}
+
 .grid .aside1 {
     grid-area: aside1;
     text-align: center;
@@ -142,6 +146,50 @@ header ul li a:hover {
 
 .grid .info {
     grid-area: info;
+    display: inline;
+    text-align: center;
+}
+
+.grid .info article {
+    border: 1px solid var(--titulos);
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--hover);
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.grid .info article img{
+    width: fit-content;
+    height: 200px;
+    overflow-x: hidden;
+    object-position: center;
+}
+
+.grid .info article h3{
+    color: var(--subtitulos);
+    font-family: 'Comfortaa', cursive;
+    margin: 10px 0px;
+}
+
+.grid .info article p {
+    padding-bottom: 6%;
+}
+
+.grid .info article a {
+    text-decoration: none;
+    color: var(--parrafos);
+    background-color: var(--fondo);
+    padding: 10px 112px;
+}
+
+.grid .info article a:hover {
+    text-decoration: none;
+    color: var(--fondo);
+    background-color: var(--parrafos);
+    padding: 10px 112px;
 }
 
 .grid .aside2 {
