@@ -437,6 +437,7 @@ footer #redes p {
     }
     
     footer {
+        width: 560px;
         display: grid;
         gap: 2px;
         grid-template-columns: repeat(2, 290px);
@@ -449,25 +450,23 @@ footer #redes p {
         height: 140px;
         padding-left: 20px;
     }
+
+    footer #nuestrosDatos {
+        width: 250px;
+    }
     
     footer #direccion {
         width: 250px;
+        padding-left: 20px;
     }
 
     footer #redes {
-        width: 220px;
+        width: 180px;
         margin-right: 40px;
     }
     
     .grid {
         width: 560px;
         display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(1);
-        grid-template-areas: "header"
-                             "conten"
-                             "aside1"
-                             "info";
-        margin: auto;
     }
 }
