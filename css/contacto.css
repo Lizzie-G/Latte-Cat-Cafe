@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/* Tipografía para titulos font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+/* Tipografía para textos  font-family: 'Pompiere', cursive;*/
+
+:root {
+    --fondo: #efe1cf;
+    --hover: #C8AE7D;
+    --titulos: #765827;
+    --subtitulos: #65451F;
+    --parrafos: #261908;
+}
+
+* {
+    width: 100%;
+    margin: 0em;
+}
+
+body {
+    font-family: 'Pompiere', cursive;
+    background-color: var(--fondo);
+    padding-top: 3.8em;
+}
+
+header {
+    background-color: var(--subtitulos);
+    width: 100%;
+    height: 2em;
+    font-size: 1.5em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header ul {
+    display: inline;
+    height: 2em;
+}
+
+header ul li {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 0.4em;
+}
+
+header ul li :hover {
+    background-color: var(--hover);
+    color: var(--fondo);
+    margin: 1.2em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--parrafos);
+    padding: 0.4em;
+}
+
+header ul li a:hover {
+    color: var(--subtitulos);
+    background-color: var(--fondo);
+}
+
+.grid .header {
+    grid-area: header;
+    display: inline;
+    text-align: center;
+    width: 80em;
+}
+
+.grid .header .empleado {
+    width: 25em;
+    height: 30em;
+    margin-right: 1.4em;
+    
+    display: inline-block;
+    background-color: var(--hover);
+}
+
+.grid .header .empleado img {
+    width: 25em;
+    height: 20em ;
+    overflow: hidden;
+}
+
+.grid .header .empleado h4 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1em;
+    color: var(--subtitulos);
+    
+}
+.grid .header .empleado p {
+    font-size: 0.5em;
+    color: var(--subtitulos);
+}
+
+.grid .conten{
+    grid-area: conten;
+    text-align: center;   
+}
+
+.grid. .conten #myVideo {
+    position: fixed ;
+    right: 0;
+    bottom: 0;
+    min-width: 80%; 
+    min-height: 80%;
+  }
+
+.grid .aside1 {
+    grid-area: aside1;
+}
+
+.grid .aside1 h2{
+    text-align: center;
+    font-size: 4em;
+    text-decoration: underline;
+}
+ .grid .aside1 p {
+    font-size: 1.5em;
+    padding: 1.5px;
+    width: fit-content;
+    position:relative;
+    text-align: justify;
+ }
+
+ .grid .aside1 h3{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+          
+ }
+
+ .grid .aside1 img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  width: 100%;
+  overflow: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+ .grid .info {
+    grid-area: info;
+    padding: 4em 2em;
+ }
+
+ .grid .info .titulo{
+    text-align: center;
+    font-size: 3em;
+    margin: 1em;
+}
+
+.grid .info .preg{
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+.grid .info .preg li{
+    background: #848381;
+    border-bottom: 1px #ccc solid;
+
+}
+
+.grid .info .preg li:first-child {
+    border-bottom: 1px #ccc solid;
+  
+}
+
+.grid .info .preg{
+    padding: 1em 0;
+    border-left: 10px var(--fondo) solid;
+    cursor: pointer;
+}
+
+.grid .info .preg:hover,
+.preg:hover .arrow {
+    border-left-color: #be9b70 ;
+
+}
+.grid .info .arrow {
+   display: inline-block;
+   margin: 0 0.5em;
+   width: 0;
+   height: 0;
+   border-top: 6px solid transparent;
+   border-left: 10 px solid #555;
+   border-bottom: 6px solid transparent;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+
+}
+.grid .info .preguntasfreq .p {
+  color: #dfdacf;
+line-height: 25px;
+
+}
+.grid .info .a {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3.3em ;
+
+}
+
+.grid .info .a -opened {
+    padding: 1em 1em 2em 3.3em;
+    height: initial;
+}
+.grid .info .arrow-rotated {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+footer {
+    background-color: var(--subtitulos);
+    color: var(--fondo);
+    font-size: 1.2em;
+    display: inline-flex;
+    padding: 0.3em 0em;
+    align-items: center;
+}
+
+footer #imgFooter {
+    float: left;
+    width: auto;
+    height: 8.8em;
+    margin-right: 3em;
+}
+
+footer #nuestrosDatos {
+    width: 25em;
+}
+
+footer #nuestrosDatos ul {
+    display: inline;
+    padding: 0em;
+}
+
+footer #nuestrosDatos ul li {
+    display: block;
+}
+
+footer #nuestrosDatos .horarios > li {
+    padding-left: 1.5em;
+    font-size: 1em;
+}
+
+
+footer #redes {
+    display: inline;
+    text-align: center;
+    width: 37.5em;
+    margin: 0em 3em;
+}
+
+footer #redes img {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.3em;
+    border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -ms-border-radius: 0.8em;
+    -o-border-radius: 0.8em;
+}
+
+footer #redes p {
+    display: inline-block;
+}
+
+.grid {
+    width: 80em;
+    display: grid;
+    gap: 0.4em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "conten info info"
+                         "aside1 info info"
+                         "aside1 info info";
+    margin: auto;                         ;
+}
