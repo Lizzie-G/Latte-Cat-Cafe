@@ -13,17 +13,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="adopta.html">Adopción</a></li>
-                <li><a href="reserva.html">Reservación</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/tienda.html">Tienda</a></li>
+                <li><a href="pages/adopta.html">Adopción</a></li>
+                <li><a href="pages/reserva.html">Reservación</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <div class="grid">
         <section class="header">
-            <img src="img/logo.jpeg" alt="Imagen del logo del establecimiento Latte Cat Cafe">
+            <img src="/img/logo.jpeg" alt="Imagen del logo del establecimiento Latte Cat Cafe">
             <h1>Latte Cat Cafe</h1>
         </section>
 
@@ -33,9 +33,9 @@
                     <td rowspan="3"><img src="img/imgPagPrincipal/conten5.jpg" alt="Imagen de diferentes amigos filinos jugando"></td>
                 </tr>
                 <tr>
-                    <td><img src="img/imgPagPrincipal/conten1.jpg" alt="Imagen de diferentes amigos felinos jugando"></td>
-                    <td><img src="img/imgPagPrincipal/conten2.jpg" alt="Imagen de diferentes amigos filinos jugando"></td>
-                    <td><img src="img/imgPagPrincipal/conten3.jpg" alt="Imagen de diferentes amigos filinos jugando"></td>
+                    <td><img src="/img/gatos/imagen1.jpg" alt="Imagen de diferentes amigos felinos jugando"></td>
+                    <td><img src="/img/gatos/imagen2.jpg" alt="Imagen de diferentes amigos filinos jugando"></td>
+                    <td><img src="/img/gatos/imagen3.jpg" alt="Imagen de diferentes amigos filinos jugando"></td>
                 </tr>
                 <tr>
                     <td rowspan="3"><img src="img/imgPagPrincipal/conten4.jpg" alt="Imagen de diferentes amigos filinos jugando"></td>
@@ -72,8 +72,43 @@
             </article>
         </section>
 
-        <section class="aside2">
-            <p></p>
+        <section class="formulario_adopcion"><br>
+            <h1>Formulario para adopcion de Mascotas</h1><br>
+            <form action="procesar_formulario.php"  method="post">
+            <fieldset>
+                <legend><b>Datos personales</b></legend>
+                <br>
+                <label for="apellido" name="apellido" id="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+                <label for="nombre" name="nombre" id="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="domicilio" name="domicilio" id="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+                <br>
+                <label for="dni" >DNI</label>
+                <input type="number" name="dni" id="dni" min="1000000" max="99999999">
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="mascota">Mascota a adoptar</label>
+                <select id="mascota" name="mascota">
+                    <option value="">Seleccionar</option>
+                    <option value="perro">Gato</option>
+                    <option value="gato">Perro</option>
+                    <option value="otra mascota">Otro</option>
+                </select>
+                    <br>
+                    <br>
+                <label for="mensaje">Mensaje</label>    
+                <textarea id="mensaje" name="mensaje" cols="60" rows="10" resize="none" placeholder="Contanos en un breve resumen porque quieres una mascota"  >
+                </textarea>
+                <input type="submit" name="enviar" value="Enviar datos"/>
+    
+            </fieldset>
+            </form>
         </section>
     </div>
 
