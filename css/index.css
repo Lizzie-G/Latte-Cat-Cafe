@@ -323,16 +323,16 @@ footer #redes p {
     }
     
     footer {
-        font-size: 16px;
+        font-size: 1em;
     }
     
     footer #nuestrosDatos .horarios > li {
-        font-size: 14px;
+        font-size: 0.9em;
     }  
 
     footer #direccion {
-        width: 800px;
-        margin-left: 30px;
+        width: 50em;
+        margin-left: 2em;
     }
     
     .grid {
@@ -412,12 +412,18 @@ footer #redes p {
         padding-left: 1em;
     }
     
+    footer #nuestrosDatos {
+        width: 100%;
+    }
+
     footer #direccion {
         padding-left: 1em;
+        width: 100%;
+
     }
 
     footer #redes {
-        width: 10em;
+        width: 100%;
     }
 
     footer #redes img{
