@@ -426,7 +426,6 @@ footer #redes p {
     }  
     
     .grid {
-        width: 560px;
-        display: grid;
-    }
+        width: 100%;
+    }
 }
