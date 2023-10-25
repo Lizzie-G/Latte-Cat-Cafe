@@ -193,9 +193,7 @@ header ul li a:hover {
     padding: 10px 112px;
 }
 
-.grid .aside2 {
-    grid-area: aside2;
-}
+
 
 footer {
     background-color: var(--subtitulos);
