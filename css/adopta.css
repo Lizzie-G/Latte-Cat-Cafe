@@ -25,8 +25,8 @@ body {
 header {
     background-color: var(--subtitulos);
     width: 100%;
-    height: 45px;
-    font-size: 20px;
+    height: 2em;
+    font-size: 1.5em;
     text-align: center;
     position: fixed;
     top: 0;
@@ -35,32 +35,31 @@ header {
 
 header ul {
     display: inline;
-    height: 44px;
+    height: 2em;
 }
 
 header ul li {
     display: inline-block;
     width: fit-content;
-    margin-top: 10px;
+    margin-top: 0.4em;
 }
 
 header ul li :hover {
     background-color: var(--hover);
     color: var(--fondo);
-    margin: 20px;
+    margin: 1.2em;
 }
 
 header ul li a {
     text-decoration: none;
     color: var(--parrafos);
-    padding: 11px;
+    padding: 0.4em;
 }
 
 header ul li a:hover {
     color: var(--subtitulos);
     background-color: var(--fondo);
 }
-
 
 .grid .header {
     grid-area: header;
@@ -70,133 +69,124 @@ header ul li a:hover {
 .grid .header img {
     width: 150px;
     float: left;
-    padding-left: 80px;
+    padding-left: 5em;
 }
 
 .grid .header h1 {
-    font-size: xx-large;
+    font-size: 3em;
     color: var(--titulos);
-    width: 150px;
+    width: fit-content;
     float: right;
-    padding-top: 45px;
-    padding-right: 120px;
+    padding-right: 1.7em;
+    padding-top: 0.55em;
 }
 
-.grid .conten {
-    background-color: #000;
-    grid-area: conten;
-    box-shadow: 5px 5px 40px 30px var(--parrafos), inset 0px 2px #261908;
-    width: 1280px;
+.adopt{
+    background: #261908;
+    color:#efe1cf;
+    column-count: 3;
+    column-gap: 30px;
 }
 
-.grid .conten ul {
-    list-style: none;
+.adopt h2{
+    padding-left: 0.6em;
+    font-size: 2,5em;
+}
+.adopt p{
+    padding: 0,5em;
+    font-size: 20px;
+}
+
+.album{
+    background: #261908;
     display: grid;
-    column-gap: 1px;
-    grid-template-columns: repeat(3, 420px);
-    grid-template-rows: repeat(3, 230px);
-    width: fit-content;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
 }
 
-.grid .conten ul .box1, .box7 {
-    background-color: var(--hover);
-    color: var(--parrafos);
-    font-size: medium;
-    width: fit-content;
-    height: cover;
-    padding: 22px;
+.fotos {
+    overflow: hidden;
 }
 
-.grid .conten ul img{
+.fotos img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
+    height: auto;
+    display: block;
 }
 
-.grid .conten ul .box3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.fotos p {
+   background:#261908;
+   color:#C8AE7D;
+   font-size: 20px ;
+   
 }
 
-.grid .conten ul .box4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+.formulario_adopcion{
+    width:600px;
+	padding: 40px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#765827;
 }
 
-.grid .conten ul .box4:hover {
-    background-image: url(videos/mimos.mp4);
+
+.formulario_adopcion label{
+	width:180px;
+	font-weight:bold;
+	display:inline-block;
+
 }
 
-.grid .aside1 {
-    grid-area: aside1;
-    text-align: center;
-}
- .grid .aside1 p {
-    font-size: 24px;
-    font-weight: bolder;
-    text-align: center;
-    padding: 10px 50px;
-    width: fit-content;
- }
-
-.grid .info {
-    grid-area: info;
-    display: inline;
-    text-align: center;
+ label{
+	width:100px;
+	font-weight:bold;
+	display:inline-block;
 }
 
-.grid .info article {
-    border: 1px solid var(--titulos);
-    width: 300px;
-    height: fit-content;
-    text-align: center;
-    overflow: hidden;
-    background-color: var(--hover);
-    display: inline-block;
-    margin: 0px 10px;
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #0c0c0c;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:1px 0;
+	display:inline-block;
 }
 
-.grid .info article img{
-    width: fit-content;
-    height: 200px;
-    overflow-x: hidden;
-    object-position: center;
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #fffcfc;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#4d37177a;
+} 
+
+
+form input[type="submit"]:hover{fo
+	cursor:pointer;
 }
 
-.grid .info article h3{
-    color: var(--subtitulos);
-    font-family: 'Comfortaa', cursive;
-    margin: 10px 0px;
-}
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #111111;
+	border-radius:3px;
+	background-color:#C8AE7D;			
+	margin:15px 0;
+	resize:none;
+	display:block;
 
-.grid .info article p {
-    padding-bottom: 6%;
-}
-
-.grid .info article a {
-    text-decoration: none;
-    color: var(--parrafos);
-    background-color: var(--fondo);
-    padding: 10px 112px;
-}
-
-.grid .info article a:hover {
-    text-decoration: none;
-    color: var(--fondo);
-    background-color: var(--parrafos);
-    padding: 10px 112px;
 }
 
 
 
 footer {
-    background-color: var(--subtitulos);
+     background-color: var(--subtitulos);
     color: var(--fondo);
     font-size: 18px;
     display: inline-flex;
@@ -243,15 +233,4 @@ footer #redes p {
     display: inline-block;
 }
 
-.grid {
-    width: 1280px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header"
-                         "conten conten conten"
-                         "aside1 aside1 aside1"
-                         "info info info"
-                         "aside2 aside2 aside2";
-    margin: auto;
-}
+
