@@ -355,10 +355,10 @@ footer #redes p {
 
     header {
         height: fit-content;
+        font-size: 1em;
     }
     
     header ul li {
-        font-size: 0.3em;
         padding-bottom: 0.4em;
     }
     
