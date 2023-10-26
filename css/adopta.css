@@ -89,7 +89,7 @@ header ul li a:hover {
     column-count: 3;
     column-gap: 2em;
     padding: 1em;
-    width: 80em;
+    width: fit-content;
 }
 
 .grid .adopt h2{
@@ -116,11 +116,42 @@ header ul li a:hover {
     overflow: hidden;
 }
 
-.fotos p {
-   background:#261908;
-   color:#C8AE7D;
-   font-size: 20px ;
+.grid .album p {
+    width: fit-content;
+   color: var(--fondo);
+   font-size: 1.2em;
+   text-align: center;
+   padding: 0.625em;
    
+}
+
+.grid .aside1{
+    grid-area: aside1;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(13, 15em);
+    gap: 0.625em;
+    overflow-y: auto;
+} 
+
+.grid .aside1 article {
+    width: 15em;
+    height: 100%;
+    background-color: var(--subtitulos);
+}
+
+.grid .aside1 article img{
+    width: 100%;
+    height: 25em; 
+    object-fit: cover;
+}
+
+.grid .aside1 article h4{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+    color: var(--fondo);
+    padding-top: 1.1em;
+    text-align: center;
 }
 
 .formulario_adopcion{
@@ -138,13 +169,6 @@ header ul li a:hover {
 	display:inline-block;
 
 }
-
- label{
-	width:100px;
-	font-weight:bold;
-	display:inline-block;
-}
-
 
 form input[type="text"],
 form input[type="email"]{
@@ -244,11 +268,7 @@ footer #redes p {
     grid-template-areas: "header header header"
                          "adopt adopt adopt"
                          "album album album"
-                         "aside1 aside1 aside1"
-                         "formu formu formu"
-
-
-
-                       ;  
+                         "formu aside1 aside1"
+                         "formu aside1 aside1";                ;  
     margin: auto;
 }
