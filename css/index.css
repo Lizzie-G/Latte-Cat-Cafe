@@ -358,7 +358,7 @@ footer #redes p {
     }
     
     header ul li {
-        font-size: large;
+        font-size: 0.8em;
         padding-bottom: 0.4em;
     }
     
@@ -422,7 +422,7 @@ footer #redes p {
     footer {
         width: 100%;
         display: grid;
-        gap: 0.13em;
+        gap: 0.4em;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(2, auto);
     }
