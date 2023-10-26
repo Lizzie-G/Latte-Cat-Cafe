@@ -13,48 +13,47 @@
 
 * {
     width: 100%;
-    margin: 0px;
+    margin: 0em;
 }
 
 body {
     font-family: 'Pompiere', cursive;
     background-color: var(--fondo);
-    padding-top: 55px;
+    padding-top: 3.8em;
 }
 
 header {
     background-color: var(--subtitulos);
     width: 100%;
-    height: 45px;
-    font-size: 20px;
+    height: 2em;
+    font-size: 1.5em;
     text-align: center;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 1;
 }
 
 header ul {
     display: inline;
-    height: 44px;
+    height: 2em;
 }
 
 header ul li {
     display: inline-block;
     width: fit-content;
-    margin-top: 10px;
+    margin-top: 0.4em;
 }
 
 header ul li :hover {
     background-color: var(--hover);
     color: var(--fondo);
-    margin: 20px;
+    margin: 1.2em;
 }
 
 header ul li a {
     text-decoration: none;
     color: var(--parrafos);
-    padding: 11px;
+    padding: 0.4em;
 }
 
 header ul li a:hover {
@@ -97,17 +96,16 @@ header ul li a:hover {
     height: 150px;
     overflow-x: hidden;
     object-position: center;
-    padding: 3% 0px;
 }
 
 .grid .conten .producto h4{
     color: var(--subtitulos);
     font-family: 'Comfortaa', cursive;
-    padding-bottom: 3%;
+    padding-bottom: 0.6em;
 }
 
 .grid .conten .producto p {
-    padding-bottom: 6%;
+    padding-bottom: 0.6em;
 }
 
 .grid .conten .producto .precio {
@@ -138,45 +136,55 @@ header ul li a:hover {
 footer {
     background-color: var(--subtitulos);
     color: var(--fondo);
-    font-size: 18px;
+    font-size: 1.2em;
     display: inline-flex;
-    padding: 4px 0px;
+    padding: 0.3em 0em;
     align-items: center;
 }
 
 footer #imgFooter {
     float: left;
     width: auto;
-    height: 140px;
-    margin-right: 50px;
+    height: 8.8em;
+    margin-right: 3em;
+}
+
+footer #nuestrosDatos {
+    width: 25em;
 }
 
 footer #nuestrosDatos ul {
     display: inline;
-    padding: 0px;
+    padding: 0em;
 }
 
 footer #nuestrosDatos ul li {
     display: block;
 }
 
+footer #nuestrosDatos .horarios > li {
+    padding-left: 1.5em;
+    font-size: 1em;
+}
+
+
 footer #redes {
     display: inline;
     text-align: center;
-    width: 400px;
-    margin-right: 50px;
+    width: 37.5em;
+    margin: 0em 3em;
 }
 
 footer #redes img {
     display: inline-block;
-    width: 32px;
-    height: 32px;
-    padding: 4px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    width: 2em;
+    height: 2em;
+    padding: 0.3em;
+    border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -ms-border-radius: 0.8em;
+    -o-border-radius: 0.8em;
 }
 
 footer #redes p {
@@ -195,4 +203,179 @@ footer #redes p {
                          "aside1 conten conten conten conten"
                          "aside2 aside2 aside2 aside2 aside2";
     margin: auto;
+}
+
+/* Este es el estilo para tamaño tableta */
+
+@media (max-width: 992px) and (min-width: 600px) {     
+    header {
+        width: 100%;
+    }
+
+    header nav ul {
+        padding: 0em;
+    }
+    
+    .grid .conten {
+        width: 100%;
+    }
+    
+    .grid .conten ul {
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    .grid .conten ul .box1, .box7 {
+        font-size: 1.1em;
+    }
+    
+    .grid .info {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        overflow-y: auto;
+    }
+    
+    .grid .info article {
+        width: 15em;
+    }
+
+    .grid .info article img{
+        width: fit-content;
+        height: 10em;
+    }
+    
+    .grid .info article h3{
+        color: var(--subtitulos);
+        font-family: 'Comfortaa', cursive;
+        margin: 0.4em 0em;
+    }
+    
+    .grid .info article p {
+        padding-top: 6%;
+        padding-bottom: 3%;
+    }
+    
+    .grid .info article a {
+        padding: 0.4em 5.1em;
+    }
+    
+    .grid .info article a:hover {
+        padding: 0.4em 5.1em;
+    }
+    
+    footer {
+        font-size: 1em;
+    }
+    
+    footer #nuestrosDatos .horarios > li {
+        font-size: 0.9em;
+    }  
+
+    footer #direccion {
+        width: 50em;
+        margin-left: 2em;
+    }
+    
+    .grid {
+        width: 96%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header header"
+                             "conten conten"
+                             "aside1 aside1"
+                             "info info"
+                             "aside2 aside2";
+    }   
+}
+
+/* Este es el estilo para tamaño celular */
+
+@media (max-width: 600px) { 
+    header {
+        width: 100%;
+    }
+    
+    .grid .header img {
+        width: 6em;
+        padding-left: 3em;
+    }
+    
+    .grid .header h1 {
+        font-size: 1.8em;
+        color: var(--titulos);
+        width: 5.1em;
+    }
+    
+    .grid .conten {
+        width: 100%;
+    }
+    
+    .grid .conten ul {
+        display: grid;
+        column-gap: 0.06em;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        padding: 0.5em;
+    }
+    
+    .grid .conten ul .box1, .box7 {
+        font-size: 0.9em;
+    }
+    
+    .grid .conten ul .box3, .box6 {
+        display: none;
+    }
+    
+    .grid .aside1 p {
+        font-size: 1.2em;
+    }
+
+    .grid .info {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        overflow-y: auto;
+    }
+    
+    .grid .info article p {
+        padding-bottom: 6%;
+    }
+    
+    footer {
+        width: 100%;
+        display: grid;
+        gap: 0.13em;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    footer #imgFooter {
+        width: auto;
+        height: 7.8em;
+        padding-left: 1em;
+    }
+    
+    footer #nuestrosDatos {
+        width: fit-content;
+    }
+
+    footer #direccion {
+        padding-left: 1em;
+        width: fit-content;
+
+    }
+
+    footer #redes {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2);
+        gap: 1em;
+    }
+
+    footer #redes img{
+        width: 1.2em;
+        height: 1.2em;
+    }  
+    
+    .grid {
+        width: 100%;
+    }
 }
