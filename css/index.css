@@ -266,7 +266,7 @@ footer #redes p {
 
 /* Este es el estilo para tamaño tableta */
 
-@media (max-width: 992px) and (min-width: 600px) {     
+@media (max-width: 992px) and (min-width: 700px) {     
     header {
         width: 100%;
     }
@@ -348,9 +348,14 @@ footer #redes p {
 
 /* Este es el estilo para tamaño celular */
 
-@media (max-width: 600px) { 
+@media (max-width: 700px) { 
+    body {
+        padding-top: 2.5em;
+    }
+    
     header {
         width: 100%;
+        font-size: 90%;
     }
     
     .grid .header img {
@@ -393,7 +398,19 @@ footer #redes p {
         grid-template-columns: repeat(3, auto);
         overflow-y: auto;
     }
-    
+
+    .grid .info article {
+        width: 16.8em;
+    }
+
+    .grid .info article a {
+        padding: 0.4em 6em;
+    }
+
+    .grid .info article a:hover {
+        padding: 0.4em 6em;
+    }
+
     .grid .info article p {
         padding-bottom: 6%;
     }
@@ -407,13 +424,15 @@ footer #redes p {
     }
     
     footer #imgFooter {
-        width: auto;
+        width: fit-content;
         height: 7.8em;
         padding-left: 1em;
+        margin: 0em;
     }
     
     footer #nuestrosDatos {
         width: fit-content;
+        font-size: 80%;
     }
 
     footer #direccion {
