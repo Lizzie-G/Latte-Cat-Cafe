@@ -13,13 +13,13 @@
 
 * {
     width: 100%;
-    margin: 0px;
+    margin: 0em;
 }
 
 body {
     font-family: 'Pompiere', cursive;
     background-color: var(--fondo);
-    padding-top: 55px;
+    padding-top: 3.8em;
 }
 
 header {
@@ -61,13 +61,14 @@ header ul li a:hover {
     background-color: var(--fondo);
 }
 
+
 .grid .header {
     grid-area: header;
     display: inline;
 }
 
 .grid .header img {
-    width: 150px;
+    width: 9em;
     float: left;
     padding-left: 5em;
 }
@@ -81,37 +82,38 @@ header ul li a:hover {
     padding-top: 0.55em;
 }
 
-.adopt{
-    background: #261908;
-    color:#efe1cf;
+.grid .adopt{
+    grid-area: adopt;
+    background: var(--parrafos);
+    color: var(--fondo);
     column-count: 3;
-    column-gap: 30px;
+    column-gap: 2em;
+    padding: 1em;
+    width: 80em;
 }
 
-.adopt h2{
+.grid .adopt h2{
     padding-left: 0.6em;
-    font-size: 2,5em;
+    font-size: 2.5em;
 }
-.adopt p{
-    padding: 0,5em;
-    font-size: 20px;
+.grid .adopt p{
+    padding: 0.5em;
+    font-size: 1.3em;
 }
 
-.album{
-    background: #261908;
+.grid .album{
+    grid-area: album;
+    background: var(--parrafos);
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(18.75em,1fr));
+    gap: 0.625em;
+    width: 80em;
 }
 
-.fotos {
-    overflow: hidden;
-}
-
-.fotos img{
+.grid .album img{
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    overflow: hidden;
 }
 
 .fotos p {
@@ -234,3 +236,19 @@ footer #redes p {
 }
 
 
+.grid {
+    width: 80em;
+    display: grid;
+    gap: 0.4em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "adopt adopt adopt"
+                         "album album album"
+                         "aside1 aside1 aside1"
+                         "formu formu formu"
+
+
+
+                       ;  
+    margin: auto;
+}
