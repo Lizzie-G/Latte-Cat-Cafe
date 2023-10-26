@@ -365,6 +365,9 @@ footer #redes p {
 
     footer #redes {
         width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2);
+        gap: 1em;
     }
 
     footer #redes img{
