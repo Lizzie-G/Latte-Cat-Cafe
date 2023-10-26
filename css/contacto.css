@@ -85,12 +85,12 @@ header ul li a:hover {
 
 .grid .header .empleado h4 {
     font-family: 'Comfortaa', cursive;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--subtitulos);
     
 }
 .grid .header .empleado p {
-    font-size: 0.5em;
+    font-size: 0.9em;
     color: var(--subtitulos);
 }
 
@@ -99,7 +99,7 @@ header ul li a:hover {
     text-align: center;   
 }
 
-.grid. .conten #myVideo {
+.grid .conten #myVideo {
     position: fixed ;
     right: 0;
     bottom: 0;
@@ -115,6 +115,7 @@ header ul li a:hover {
     text-align: center;
     font-size: 4em;
     text-decoration: underline;
+    color: var(--titulos);
 }
  .grid .aside1 p {
     font-size: 1.5em;
@@ -122,12 +123,14 @@ header ul li a:hover {
     width: fit-content;
     position:relative;
     text-align: justify;
+    color: var(--parrafos);
  }
 
  .grid .aside1 h3{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.1em;
     text-decoration: none;
+    color: var(--subtitulos);
           
  }
 
@@ -142,7 +145,8 @@ header ul li a:hover {
   overflow: hidden;
 }
 
- .grid .info {
+
+.grid .info {
     grid-area: info;
     padding: 4em 2em;
  }
@@ -151,75 +155,37 @@ header ul li a:hover {
     text-align: center;
     font-size: 3em;
     margin: 1em;
+    text-decoration: underline;
+    color: var(--titulos);
 }
 
-.grid .info .preg{
-    list-style: none;
-    max-width: 700px;
-    margin: 0 auto;
-
-}
-
-.grid .info .preg li{
-    background: #848381;
-    border-bottom: 1px #ccc solid;
-
-}
-
-.grid .info .preg li:first-child {
-    border-bottom: 1px #ccc solid;
+.grid .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: var(--titulos);
+    color: var(--fondo);
+    padding-bottom: 40px;
+  }
   
-}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--hover);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(9, 9, 9, 0.953);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-.grid .info .preg{
-    padding: 1em 0;
-    border-left: 10px var(--fondo) solid;
-    cursor: pointer;
-}
 
-.grid .info .preg:hover,
-.preg:hover .arrow {
-    border-left-color: #be9b70 ;
 
-}
-.grid .info .arrow {
-   display: inline-block;
-   margin: 0 0.5em;
-   width: 0;
-   height: 0;
-   border-top: 6px solid transparent;
-   border-left: 10 px solid #555;
-   border-bottom: 6px solid transparent;
-   transition: 0.3s;
-   -webkit-transition: 0.3s;
-   -moz-transition: 0.3s;
-   -ms-transition: 0.3s;
-   -o-transition: 0.3s;
+  
 
-}
-.grid .info .preguntasfreq .p {
-  color: #dfdacf;
-line-height: 25px;
-
-}
-.grid .info .a {
-    overflow: hidden;
-    height: 0;
-    padding: 0 1em 0 3.3em ;
-
-}
-
-.grid .info .a -opened {
-    padding: 1em 1em 2em 3.3em;
-    height: initial;
-}
-.grid .info .arrow-rotated {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-}
 
 footer {
     background-color: var(--subtitulos);
