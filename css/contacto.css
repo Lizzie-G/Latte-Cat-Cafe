@@ -26,6 +26,7 @@ header {
     background-color: var(--subtitulos);
     width: 100%;
     height: 2em;
+    font-family: 'Pompiere', cursive;
     font-size: 1.5em;
     text-align: center;
     position: fixed;
@@ -66,20 +67,20 @@ header ul li a:hover {
     display: inline;
     text-align: center;
     width: 80em;
+    
 }
 
 .grid .header .empleado {
     width: 25em;
     height: 30em;
-    margin-right: 1.4em;
-    
-    display: inline-block;
+    display: inline-table;
     background-color: var(--hover);
+        
 }
 
 .grid .header .empleado img {
     width: 25em;
-    height: 20em ;
+    height: 19em ;
     overflow: hidden;
 }
 
@@ -87,16 +88,21 @@ header ul li a:hover {
     font-family: 'Comfortaa', cursive;
     font-size: 1.2em;
     color: var(--subtitulos);
+    padding-top: 0.5em;
     
 }
 .grid .header .empleado p {
     font-size: 0.9em;
     color: var(--subtitulos);
+    margin-bottom: 0;
+
 }
 
 .grid .conten{
     grid-area: conten;
-    text-align: center;   
+    padding-bottom: 10px;  
+    height: fit-content;
+    margin-top: 80px;
 }
 
 .grid .conten #myVideo {
@@ -105,7 +111,14 @@ header ul li a:hover {
     bottom: 0;
     min-width: 80%; 
     min-height: 80%;
-  }
+}
+.grid .conten p {
+    font-size: 1.5em;
+    font-family: 'Confortaa', cursive;
+    font-style: italic;
+    color: var(--hover);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 .grid .aside1 {
     grid-area: aside1;
@@ -113,11 +126,13 @@ header ul li a:hover {
 
 .grid .aside1 h2{
     text-align: center;
+    font-family: 'Confortaa', cursive;
     font-size: 4em;
     text-decoration: underline;
     color: var(--titulos);
 }
  .grid .aside1 p {
+    font-family: 'Pompiere', cursive;
     font-size: 1.5em;
     padding: 1.5px;
     width: fit-content;
@@ -126,14 +141,27 @@ header ul li a:hover {
     color: var(--parrafos);
  }
 
+ .grid .aside1 p img {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.3em;
+    border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -ms-border-radius: 0.8em;
+    -o-border-radius: 0.8em;
+ }
+
  .grid .aside1 h3{
     text-align: center;
+    font-family: 'Confortaa', cursive;
     font-size: 1.1em;
     text-decoration: none;
     color: var(--subtitulos);
           
  }
-
+ 
  .grid .aside1 img {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -149,44 +177,64 @@ header ul li a:hover {
 .grid .info {
     grid-area: info;
     padding: 4em 2em;
- }
+}
 
  .grid .info .titulo{
-    text-align: center;
-    font-size: 3em;
+    text-align: justify;
+    font-family: 'Confortaa', cursive;
+    font-size: 3.2em;
     margin: 1em;
     text-decoration: underline;
     color: var(--titulos);
-}
+ }
 
-.grid .dropdown {
+ .grid .dropdown {
     position: relative;
     display: inline-block;
+    font-family: 'Pompiere', cursive;
     font-size: 1.5em;
     background-color: var(--titulos);
     color: var(--fondo);
-    padding-bottom: 40px;
+     padding-bottom: 1.0em;
+    margin: 8px;
+     
   }
   
 .dropdown-content {
     display: none;
     position: absolute;
+    font-family: 'Pompiere', cursive;
     background-color: var(--hover);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(9, 9, 9, 0.953);
-    padding: 12px 16px;
+    min-width: 10em;
+    box-shadow: 0em 80.5em 1em 0em rgba(9, 9, 9, 0.953);
+    padding: 0.75em 1em;
     z-index: 1;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
+    
+.grid .info .video p {
+    font-size: 1.5em;
+    font-family: 'Confortaa', cursive;
+    font-style: italic;
+    text-align: center;
+    color: var(--hover);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+    padding: 5% 0% 4.5% 0%;
+}
 
 
-
+.grid .info img {
+    height: 350px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+    width: 760px;
+}
   
-
-
 footer {
     background-color: var(--subtitulos);
     color: var(--fondo);
