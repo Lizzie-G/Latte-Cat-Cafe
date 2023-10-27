@@ -18,7 +18,7 @@
 
 body {
     font-family: 'Pompiere', cursive;
-    background-color: var(--fondo);
+    background-color: var(--hover);
     padding-top: 3.8em;
 }
 
@@ -73,7 +73,7 @@ header ul li a:hover {
     width: 25em;
     height: 30em;
     margin-right: 1.4em;
-    display: inline-block;
+    display: inline-table;
     background-color: var(--hover);
         
 }
@@ -88,6 +88,7 @@ header ul li a:hover {
     font-family: 'Comfortaa', cursive;
     font-size: 1.2em;
     color: var(--subtitulos);
+    padding-top: 0.5em;
     
 }
 .grid .header .empleado p {
