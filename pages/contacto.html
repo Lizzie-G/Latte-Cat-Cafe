@@ -16,6 +16,12 @@
 </head>
 
 <body>
+  <div id="contenedor_carga">
+    <div id="carga">
+      <img src="../img/loadinglogoicon.gif" alt="loadinglogoicon">
+    </div>
+  </div>
+  
   <header>
     <nav>
       <ul>
@@ -170,8 +176,7 @@
         <source src="../videos/mimos4.mp4" type="video/mp4">
       </video>
     </div>
-
-       <!-- <img src="../img/contacto/coffeeandcats.jpg"    alt="coffeandcatspleaseneon"> -->
+    
     </section>
 
     <section class="aside2">
@@ -211,7 +216,13 @@
       <p>Nuestras Redes</p>
     </div>
   </footer>
-
+<script>
+  window.onload= function(){
+    var contenedor = document.getElementById('contenedor_carga');
+    contenedor.style.visibility= 'hidden';
+    contenedor.style.opacity ='0';
+  }
+</script>
 </body>
 
 </html>
