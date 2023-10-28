@@ -65,8 +65,10 @@ header ul li a:hover {
 .grid .header {
     grid-area: header;
     display: inline;
+    justify-self: center;
     text-align: center;
     width: 80em;
+    
     
 }
 
@@ -75,7 +77,7 @@ header ul li a:hover {
     height: 30em;
     display: inline-table;
     background-color: var(--hover);
-        
+    margin-right: 1.2em;
 }
 
 .grid .header .empleado img {
@@ -116,8 +118,10 @@ header ul li a:hover {
     font-size: 1.5em;
     font-family: 'Confortaa', cursive;
     font-style: italic;
+    text-align: center;
     color: var(--hover);
-    text-shadow: -0.06em 0 var(--parrafos), 0 0.06em var(--parrafos), 0.06em 0 var(--parrafos), 0 --0.06em var(--parrafos);
+    -webkit-text-stroke: 0.03em var(--parrafos);
+    /* text-shadow: -0.0em 0 var(--parrafos), 0 0.06em var(--parrafos), 0.06em 0 var(--parrafos), 0 --0.06em var(--parrafos); */
 }
 
 .grid .aside1 {
@@ -206,7 +210,7 @@ header ul li a:hover {
     font-family: 'Pompiere', cursive;
     background-color: var(--hover);
     min-width: 10em;
-    box-shadow: 0em 80.5em 1em 0em rgba(9, 9, 9, 0.953);
+    box-shadow: 0em 80.5em 1em 0em var(--parrafos);
     padding: 0.75em 1em;
     z-index: 1;
   }
@@ -221,18 +225,9 @@ header ul li a:hover {
     font-style: italic;
     text-align: center;
     color: var(--hover);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    
-    padding: 5% 0% 4.5% 0%;
-}
-
-
-.grid .info img {
-    height: 350px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 15%;
-    width: 760px;
+    -webkit-text-stroke: 0.03em var(--parrafos) ;
+     padding: 5% 0% 4.5% 0%;
+     margin: 0%;
 }
   
 footer {
@@ -348,167 +343,52 @@ footer #redes p {
     }
 
     .grid .header {
-        grid-area: header;
-        display: inline;
-        text-align: center;
-        width: 80em;
-        
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(3, auto);
+        overflow-y: auto;
+        width: 100%;                
     }
     
     .grid .header .empleado {
-        width: 25em;
-        height: 30em;
-        display: inline-table;
-        background-color: var(--hover);
-            
+        width: 15em;       
     }
     
     .grid .header .empleado img {
-        width: 25em;
-        height: 19em ;
-        overflow: hidden;
+        width: fit-content;
+        height: 10em;
     }
     
     .grid .header .empleado h4 {
-        font-family: 'Comfortaa', cursive;
-        font-size: 1.2em;
-        color: var(--subtitulos);
-        padding-top: 0.5em;
-        
+        margin: 0.4em 0em;
     }
+
     .grid .header .empleado p {
-        font-size: 0.9em;
-        color: var(--subtitulos);
-        margin-bottom: 0;
-    
+        padding-top: 6%;
+        padding-bottom: 3%;
     }
-    
-    .grid .conten{
-        grid-area: conten;
-        padding-bottom: 10px;  
-        height: fit-content;
-        margin-top: 80px;
-    }
-    
-    .grid .conten #myVideo {
-        position: fixed ;
-        right: 0;
-        bottom: 0;
-        min-width: 80%; 
-        min-height: 80%;
-    }
+      
     .grid .conten p {
-        font-size: 1.5em;
-        font-family: 'Confortaa', cursive;
-        font-style: italic;
-        color: var(--hover);
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 1.5em;         
     }
-    
-    .grid .aside1 {
-        grid-area: aside1;
-    }
-    
+       
     .grid .aside1 h2{
-        text-align: center;
-        font-family: 'Confortaa', cursive;
-        font-size: 4em;
-        text-decoration: underline;
-        color: var(--titulos);
+        font-size: 1.8em;        
     }
-     .grid .aside1 p {
-        font-family: 'Pompiere', cursive;
-        font-size: 1.5em;
-        padding: 1.5px;
-        width: fit-content;
-        position:relative;
-        text-align: justify;
-        color: var(--parrafos);
-     }
-    
-     .grid .aside1 p img {
-        display: inline-block;
-        width: 2em;
-        height: 2em;
-        padding: 0.3em;
-        border-radius: 0.8em;
-        -webkit-border-radius: 0.8em;
-        -moz-border-radius: 0.8em;
-        -ms-border-radius: 0.8em;
-        -o-border-radius: 0.8em;
-     }
-    
-     .grid .aside1 h3{
-        text-align: center;
-        font-family: 'Confortaa', cursive;
-        font-size: 1.1em;
-        text-decoration: none;
-        color: var(--subtitulos);
-              
-     }
-     
-     .grid .aside1 img {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 4;
-      grid-row-end: 5;
-      width: 100%;
-      overflow: 100%;
-      object-fit: cover;
-      overflow: hidden;
-    }
-    
     
     .grid .info {
         grid-area: info;
-        padding: 4em 2em;
+        padding: 1em;
     }
     
-     .grid .info .titulo{
-        text-align: justify;
-        font-family: 'Confortaa', cursive;
-        font-size: 3.2em;
-        margin: 1em;
-        text-decoration: underline;
-        color: var(--titulos);
-     }
-    
-     .grid .dropdown {
-        position: relative;
-        display: inline-block;
-        font-family: 'Pompiere', cursive;
-        font-size: 1.5em;
-        background-color: var(--titulos);
-        color: var(--fondo);
-         padding-bottom: 1.0em;
-        margin: 8px;
-         
-      }
-      
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        font-family: 'Pompiere', cursive;
-        background-color: var(--hover);
-        min-width: 10em;
-        box-shadow: 0em 80.5em 1em 0em rgba(9, 9, 9, 0.953);
-        padding: 0.75em 1em;
-        z-index: 1;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-        
-    .grid .info .video p {
-        font-size: 1.5em;
-        font-family: 'Confortaa', cursive;
-        font-style: italic;
+    .grid .info .titulo{
         text-align: center;
-        color: var(--hover);
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        
-        padding: 5% 0% 4.5% 0%;
+        font-size: 1.8em;        
+    }
+            
+    .grid .info .video p {
+        font-size: 1.5em;  
+        padding: 0em 0.6em;              
     }
       
     footer {
@@ -528,12 +408,13 @@ footer #redes p {
         width: 96%;
         display: grid;
         gap: 0.4em;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "header header header"
-                             "conten info info"
-                             "aside1 info info"
-                             "aside1 info info";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header header"
+                             "conten info"
+                             "aside1 info "
+                             "aside1 info ";
         margin: auto;                         ;
     }
 
 }
+
