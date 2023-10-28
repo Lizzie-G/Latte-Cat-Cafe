@@ -127,24 +127,33 @@ header ul li a:hover {
 
 .grid .aside1{
     grid-area: aside1;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(13, 15em);
+    width: 46em;
+    display: flex; 
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(13, auto);
     gap: 0.625em;
-    overflow-y: auto;
-    overflow-x: scroll;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    
+    
 } 
 
 .grid .aside1 article {
+    flex:1 0 auto;
     width: 15em;
-    height: 100%;
+    height: 42.5em;
+    object-fit: cover;
     background-color: var(--subtitulos);
+    display: block;
 }
 
 .grid .aside1 article img{
     width: 100%;
-    height: 25em; 
+    height: 20em; 
+    left: 0;
+    position: sticky;
     object-fit: cover;
+    scroll-snap-align: start;
 }
 
 .grid .aside1 article h4{
