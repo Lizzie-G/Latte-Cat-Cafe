@@ -304,3 +304,40 @@ footer #redes p {
                          "aside1 info info";
     margin: auto;                         ;
 }
+
+
+*.,*: :after, *: :before {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+  
+#contenedor_carga{
+    background-color: rgba(250, 240, 245, 0.975);
+    height: 100% ;
+    width: 100%;
+    position: fixed;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    z-index: 10000;
+}
+
+#carga{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+ 
+
+   
