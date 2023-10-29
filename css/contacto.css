@@ -112,7 +112,7 @@ header ul li a:hover {
 }
 .grid .conten p {
     font-size: 1.5em;
-    font-family: 'Confortaa', cursive;
+    font-family: 'Comfortaa', cursive;
     font-style: italic;
     text-align: center;
     color: var(--hover);
@@ -125,7 +125,7 @@ header ul li a:hover {
 
 .grid .aside1 h2{
     text-align: center;
-    font-family: 'Confortaa', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 2.5em;
     text-decoration: underline;
     color: var(--titulos);
@@ -154,7 +154,7 @@ header ul li a:hover {
 
  .grid .aside1 h3{
     text-align: center;
-    font-family: 'Confortaa', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 1.5em;
     text-decoration: none;
     color: var(--subtitulos);
@@ -180,7 +180,7 @@ header ul li a:hover {
 
  .grid .info .titulo{
     text-align: center;
-    font-family: 'Confortaa', cursive;
+    font-family: 'Comfortaa', cursive;
     font-size: 2.5em;
     margin: 0.8em 0em;
     text-decoration: underline;
@@ -221,7 +221,7 @@ header ul li a:hover {
     
 .grid .info .video p {
     font-size: 1.5em;
-    font-family: 'Confortaa', cursive;
+    font-family: 'Comfortaa', cursive;
     font-style: italic;
     text-align: center;
     color: var(--hover);
