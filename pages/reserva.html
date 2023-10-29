@@ -12,7 +12,13 @@
 
 <body>
     <header>
-        <nav>
+        <div id="contenedor_carga">
+            <div id="carga">
+              <img src="../img/loadinglogoicon.gif" alt="loadinglogoicon">
+            </div>
+          </div>
+          
+          <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -112,7 +118,13 @@
             <p>Nuestras Redes</p>
         </div>
     </footer>
-
+    <script>
+        window.onload= function(){
+          var contenedor = document.getElementById('contenedor_carga');
+          contenedor.style.visibility= 'hidden';
+          contenedor.style.opacity ='0';
+        }
+      </script>
 </body>
 
 </html>
