@@ -280,7 +280,7 @@ footer #redes p {
 }
 
 #contenedor_carga {
-    background-color: rgba(250, 240, 245, 0.975);
+    background-color:var(--hover);
     height: 100%;
     width: 100%;
     position: fixed;
