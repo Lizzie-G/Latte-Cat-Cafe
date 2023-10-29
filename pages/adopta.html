@@ -145,47 +145,57 @@
             </article>
 
         </section>
+
+
         <section class="formu" ><br>
             <h1>Formulario para adopcion de Mascotas</h1><br>
             <form id="formuadopcion">
                 <fieldset>
                     <legend>Datos personales</legend>
-                    <label for="apellido" name="apellido" id="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" required>
+                    <label for="apellido" name="apellido" id="apellido">Apellido
+                        <input type="text" name="apellido" id="apellido" required>
+                    </label>
                     <br>
-                    <label for="nombre" name="nombre" id="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required>
+                    <label for="nombre" name="nombre" id="nombre">nombre
+                        <input type="text" name="nombre" id="nombre" required>
+                    </label>
                     <br>
-                    <label for="domicilio" name="domicilio" id="domicilio">Domicilio</label>
-                    <input type="text" name="domicilio" id="domicilio" required>
+                    <label for="domicilio" name="domicilio" id="domicilio">Domicilio
+                        <input type="text" name="domicilio" id="domicilio" required>
+                    </label>
                     <br>
-                    <label for="dni">DNI</label>
-                    <input type="number" name="dni" id="dni" min="1000000" max="99999999" required>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" required>
+                    <label for="dni">DNI
+                        <input type="number" name="dni" id="dni" min="1000000" max="99999999" required>
+                    </label>
                     <br>
-                    <label for="mascota">Mascota a adoptar</label>
-                    <select id="mascota" name="mascota" required>
-                        <option value="">Seleccionar</option>
-                        <option value="alex">Alex</option>
-                        <option value="anton">Anton</option>
-                        <option value="arturo">Arturo</otion>
-                        <option value="benito">Benito</option>
-                        <option value="carlitos">Carlitos</option>
-                        <option value="felipe">Felipe</option>
-                        <option value="josema">Josema</option>
-                        <option value="kari">Kari</option>
-                        <option value="magnolia">Magnolia</option>
-                        <option value="rita">Rita</option>
-                        <option value="soda">Soda</option>
-                        <option value="tom">Tom</option>
-                    </select>
+                    <label for="email">E-mail
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <br>
+                    <label for="mascota">Mascota a adoptar
+                        <select id="mascota" name="mascota" required>
+                            <option value="">Seleccionar</option>
+                            <option value="alex">Alex</option>
+                            <option value="anton">Anton</option>
+                            <option value="arturo">Arturo</otion>
+                            <option value="benito">Benito</option>
+                            <option value="carlitos">Carlitos</option>
+                            <option value="felipe">Felipe</option>
+                            <option value="josema">Josema</option>
+                            <option value="kari">Kari</option>
+                            <option value="magnolia">Magnolia</option>
+                            <option value="rita">Rita</option>
+                            <option value="soda">Soda</option>
+                            <option value="tom">Tom</option>
+                        </select>
+                    </label>
                     <br>
                     <br>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" cols="60" rows="10" resize="none" required
-                        placeholder="Contanos en un breve resumen porque quieres una mascota">
-                    </textarea>
+                    <label for="mensaje">Mensaje
+                        <textarea id="mensaje" name="mensaje" cols="60" rows="10" resize="none" required
+                            placeholder="Contanos en un breve resumen porque quieres una mascota">
+                        </textarea>
+                </label>
                     <input type="submit" name="submit" value="Enviar Datos">
                 </fieldset>
             </form>
@@ -221,13 +231,6 @@
             <p>Nuestras Redes</p>
         </div>
     </footer>
-    <script>
-        window.onload= function(){
-          var contenedor = document.getElementById('contenedor_carga');
-          contenedor.style.visibility= 'hidden';
-          contenedor.style.opacity ='0';
-        }
-      </script>
 <script src="/js/formulario.js"></script>
 </body>
 

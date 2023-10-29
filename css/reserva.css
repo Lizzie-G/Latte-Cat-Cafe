@@ -200,7 +200,7 @@ header ul li a:hover {
 }
 
 .grid .formu form input[type="text"],
-.grid .formu form input[type="email"] {
+.grid .formu form input[type="mail"] {
   border: 0.06em solid var(--parrafos);
   border-radius: 0.19em;
   background-color: var(--fondo);
