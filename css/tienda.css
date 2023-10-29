@@ -66,11 +66,19 @@ header ul li a:hover {
     grid-area: header;
     display: grid;
     place-content: center;
+    justify-items: center;
+    height: 10.7em;
 }
 
 .grid .header img{
-    width: 150px;
-    text-align: center;
+    width: 9em;
+    
+}
+
+.grid .header h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.8em;
+    margin-top: 1em;
 }
 
 .grid .conten{
@@ -82,18 +90,17 @@ header ul li a:hover {
 }
 
 .grid .conten .producto {
-    border: 1px solid var(--titulos);
-    width: 200px;
-    height: 300px;
+    border: 0.09em solid var(--titulos);
+    width: 13em;
+    height: 17.5em;
     text-align: center;
     overflow: hidden;
     background-color: var(--hover);
-    display: block;
 }
 
 .grid .conten .producto img{
     width: fit-content;
-    height: 150px;
+    height: 9em;
     overflow-x: hidden;
     object-position: center;
 }
@@ -111,9 +118,7 @@ header ul li a:hover {
 .grid .conten .producto .precio {
     color: var(--hover);
     font-weight: bolder;
-    padding: 10px 0px;
-    object-position: bottom;
-    position: 0px;
+    padding: 0.5em 0em;
     background-color: var(--parrafos);
     border: 1px solid var(--subtitulos);
 }
@@ -121,6 +126,7 @@ header ul li a:hover {
 .grid .aside1{
     background-color: greenyellow;
     grid-area: aside1;
+    height: 62em;
 }
 
 .grid .aside2{
@@ -167,6 +173,10 @@ footer #nuestrosDatos .horarios > li {
     font-size: 1em;
 }
 
+footer #nuestrosDatos ul li a {
+    text-decoration: none;
+    color: var(--hover);
+}
 
 footer #redes {
     display: inline;
@@ -204,6 +214,37 @@ footer #redes p {
                          "aside2 aside2 aside2 aside2 aside2";
     margin: auto;
 }
+
+*.,*: :after,*: :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor_carga {
+    background-color: rgba(250, 240, 245, 0.975);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    z-index: 10000;
+}
+
+#carga {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
 
 /* Este es el estilo para tamaño tableta */
 
