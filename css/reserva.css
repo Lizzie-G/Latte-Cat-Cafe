@@ -193,6 +193,10 @@ header ul li a:hover {
   border-radius: 0.06em;
   background-color: var(--fondo);
   padding: 0.5em 0em;
+  -webkit-border-radius: 0.06em;
+  -moz-border-radius: 0.06em;
+  -ms-border-radius: 0.06em;
+  -o-border-radius: 0.06em;
 }
 
 .grid .formu form input[type="text"],
@@ -321,7 +325,7 @@ footer #redes p {
   margin: auto;
 }
 
-*.,*: :after,*: :before {
+*::after,*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
