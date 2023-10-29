@@ -228,6 +228,11 @@ footer #nuestrosDatos .horarios > li {
     font-size: 1em;
 }
 
+footer #nuestrosDatos ul li a {
+    text-decoration: none;
+    color: var(--hover);
+}
+
 footer #direccion p {
     font-size: 1em;
 }
