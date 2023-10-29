@@ -288,7 +288,68 @@ footer #redes img {
 footer #redes p {
     display: inline-block;
 }
+footer {
+    background-color: var(--subtitulos);
+    color: var(--fondo);
+    font-size: 1.2em;
+    display: inline-flex;
+    padding: 0.3em 0em;
+    align-items: center;
+}
 
+footer #imgFooter {
+    float: left;
+    width: auto;
+    height: 8.8em;
+    margin-right: 3em;
+}
+
+footer #nuestrosDatos {
+    width: 25em;
+}
+
+footer #nuestrosDatos ul {
+    display: inline;
+    padding: 0em;
+}
+
+footer #nuestrosDatos ul li {
+    display: block;
+}
+
+footer #nuestrosDatos ul li a {
+    text-decoration: none;
+    color: var(--hover);
+}
+
+footer #nuestrosDatos .horarios > li {
+    padding-left: 1.5em;
+    font-size: 1em;
+}
+
+
+footer #redes {
+    display: inline;
+    text-align: center;
+    width: 37.5em;
+    margin: 0em 3em;
+}
+
+footer #redes img {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    padding: 0.3em;
+    border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -ms-border-radius: 0.8em;
+    -o-border-radius: 0.8em;
+}
+
+footer #redes p {
+    display: inline-block;
+}
 
 .grid {
     width: 80em;

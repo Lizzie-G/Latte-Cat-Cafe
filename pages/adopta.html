@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -30,6 +30,7 @@
         </section>
 
         <section class="adopt">
+            <div id="adopciones">
             <h2>La importante decision que se toma al adoptar una mascota</h2>
             <p>Adoptar una mascota es una decisión importante y emocionante que conlleva una gran responsabilidad. Antes
                 de dar este paso, es crucial comprender la importancia de cuidar adecuadamente a un animal y brindarle
@@ -59,6 +60,7 @@
                 construimos con ellos es única y especial, llena de amor y lealtad. A cambio de nuestro cuidado,
                 recibimos su amor incondicional y devoción, lo cual es una experiencia maravillosa y gratificante.
             </p>
+            </div>
         </section>
 
         <section class="album">
@@ -129,25 +131,25 @@
 
         <section class="formu"><br>
             <h1>Formulario para adopcion de Mascotas</h1><br>
-            <form action="" method="">
+            <form id="formu adopcion">
                 <fieldset>
                     <legend>Datos personales</legend>
                     <label for="apellido" name="apellido" id="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
+                    <input type="text" name="apellido" id="apellido" required>
                     <br>
                     <label for="nombre" name="nombre" id="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" name="nombre" id="nombre" required>
                     <br>
                     <label for="domicilio" name="domicilio" id="domicilio">Domicilio</label>
-                    <input type="text" name="domicilio" id="domicilio">
+                    <input type="text" name="domicilio" id="domicilio" required>
                     <br>
                     <label for="dni">DNI</label>
-                    <input type="number" name="dni" id="dni" min="1000000" max="99999999">
+                    <input type="number" name="dni" id="dni" min="1000000" max="99999999" required>
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                     <br>
                     <label for="mascota">Mascota a adoptar</label>
-                    <select id="mascota" name="mascota">
+                    <select id="mascota" name="mascota" required>
                         <option value="">Seleccionar</option>
                         <option value="alex">Alex</option>
                         <option value="anton">Anton</option>
@@ -165,10 +167,10 @@
                     <br>
                     <br>
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" cols="60" rows="10" resize="none"
+                    <textarea id="mensaje" name="mensaje" cols="60" rows="10" resize="none" required
                         placeholder="Contanos en un breve resumen porque quieres una mascota">
                     </textarea>
-                    <input type="submit" name="enviar" value="Enviar datos">
+                    <input type="submit" name="submit" value="Enviar Datos">
                 </fieldset>
             </form>
         </section>
@@ -178,7 +180,7 @@
         <img id="imgFooter" src="../img/logo.jpeg" alt="Imagen del logo del establecimiento">
         <div id="nuestrosDatos">
             <ul>
-                <li>Contacto</li>
+                <li><a href="contacto.html">Contacto</a></li>
                 <ul class="horarios">Horarios
                     <li>Lunes a Viernes</li>
                     <li>7:00 a 19:00</li>
@@ -203,7 +205,7 @@
             <p>Nuestras Redes</p>
         </div>
     </footer>
-<script src="/js/formu.js"></script>
+ <script src="/js/formulario.js"></script>
 </body>
 
 </html>
