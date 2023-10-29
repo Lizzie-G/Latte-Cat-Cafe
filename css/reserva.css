@@ -233,8 +233,7 @@ form input[type="submit"]:hover {
 #textarea {
   width: 30em;
   height: 6.25em;
-  border: 0.004em;
-  solidvar(--fondo):;
+  border: 0.004em solid var(--fondo);
   border-radius: 0.19em;
   background-color: var(--hover);
   margin: 1em 0;
