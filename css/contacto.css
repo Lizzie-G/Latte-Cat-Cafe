@@ -26,7 +26,6 @@ header {
     background-color: var(--subtitulos);
     width: 100%;
     height: 2em;
-    font-family: 'Pompiere', cursive;
     font-size: 1.5em;
     text-align: center;
     position: fixed;
@@ -67,9 +66,7 @@ header ul li a:hover {
     display: inline;
     justify-self: center;
     text-align: center;
-    width: 80em;
-    
-    
+    width: 80em;      
 }
 
 .grid .header .empleado {
@@ -77,7 +74,7 @@ header ul li a:hover {
     height: 30em;
     display: inline-table;
     background-color: var(--hover);
-    margin-right: 1.2em;
+    margin: 0em auto;
 }
 
 .grid .header .empleado img {
@@ -94,7 +91,7 @@ header ul li a:hover {
     
 }
 .grid .header .empleado p {
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: var(--subtitulos);
     margin-bottom: 0;
 
@@ -102,17 +99,16 @@ header ul li a:hover {
 
 .grid .conten{
     grid-area: conten;
-    padding-bottom: 0.6em;  
     height: fit-content;
-    margin-top: 5em;
+    margin-bottom: 1em;
+    top: 0;
 }
 
 .grid .conten #myVideo {
     position: fixed ;
-    right: 0;
-    bottom: 0;
     min-width: 80%; 
     min-height: 80%;
+    top: 0;
 }
 .grid .conten p {
     font-size: 1.5em;
@@ -121,7 +117,6 @@ header ul li a:hover {
     text-align: center;
     color: var(--hover);
     -webkit-text-stroke: 0.03em var(--parrafos);
-    /* text-shadow: -0.0em 0 var(--parrafos), 0 0.06em var(--parrafos), 0.06em 0 var(--parrafos), 0 --0.06em var(--parrafos); */
 }
 
 .grid .aside1 {
@@ -131,13 +126,14 @@ header ul li a:hover {
 .grid .aside1 h2{
     text-align: center;
     font-family: 'Confortaa', cursive;
-    font-size: 4em;
+    font-size: 2.5em;
     text-decoration: underline;
     color: var(--titulos);
+    padding-bottom: 0.5em;
 }
  .grid .aside1 p {
     font-family: 'Pompiere', cursive;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 0.19em;
     width: fit-content;
     position:relative;
@@ -147,9 +143,8 @@ header ul li a:hover {
 
  .grid .aside1 p img {
     display: inline-block;
-    width: 2em;
-    height: 2em;
-    padding: 0.3em;
+    width: 1.1em;
+    height: 1.1em;
     border-radius: 0.8em;
     -webkit-border-radius: 0.8em;
     -moz-border-radius: 0.8em;
@@ -160,9 +155,10 @@ header ul li a:hover {
  .grid .aside1 h3{
     text-align: center;
     font-family: 'Confortaa', cursive;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-decoration: none;
     color: var(--subtitulos);
+    padding: 1.38em 0em;
           
  }
  
@@ -180,28 +176,31 @@ header ul li a:hover {
 
 .grid .info {
     grid-area: info;
-    padding: 4em 2em;
 }
 
  .grid .info .titulo{
-    text-align: justify;
+    text-align: center;
     font-family: 'Confortaa', cursive;
-    font-size: 3.2em;
-    margin: 1em;
+    font-size: 2.5em;
+    margin: 0.8em 0em;
     text-decoration: underline;
     color: var(--titulos);
+ }
+
+ .grid .info .titulo ul .preguntasFreq{
+    padding: 0em;
  }
 
  .grid .info .dropdown {
     position: relative;
     display: inline-block;
     font-family: 'Pompiere', cursive;
-    font-size: 1.5em;
+    font-size: 1.8em;
     background-color: var(--titulos);
     color: var(--fondo);
-     padding-bottom: 1.0em;
-    margin: 0.5em;
-     
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 0.3em 0em;       
   }
   
 .grid .info .dropdown-content {
@@ -213,6 +212,7 @@ header ul li a:hover {
     box-shadow: 0em 80.5em 1em 0em var(--parrafos);
     padding: 0.75em 1em;
     z-index: 1;
+    width: fit-content;
   }
   
  .grid .info .dropdown:hover .dropdown-content {
@@ -291,7 +291,7 @@ footer #redes p {
 .grid {
     width: 80em;
     display: grid;
-    gap: 0.4em;
+    gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
                          "conten info info"
@@ -347,48 +347,68 @@ footer #redes p {
         gap: 1em;
         grid-template-columns: repeat(3, auto);
         overflow-y: auto;
-        width: 100%;                
+        width: 100%; 
+        height: 27em;               
     }
     
     .grid .header .empleado {
-        width: 15em;       
+        width: 20em;  
+        height: 27em;  
     }
     
     .grid .header .empleado img {
-        width: fit-content;
-        height: 10em;
+        width: 20em;
+        height: 15em;
+        overflow: hidden;
     }
     
     .grid .header .empleado h4 {
-        margin: 0.4em 0em;
+        margin: 0.1em 0em;
     }
 
     .grid .header .empleado p {
-        padding-top: 6%;
-        padding-bottom: 3%;
+        padding-bottom: 0em;
+        margin-bottom: 0em;
+    }
+
+    .grid .conten {
+        height: fit-content;
+        margin-bottom: 1em;
+        top: ;
     }
       
     .grid .conten p {
-        font-size: 1.5em;         
+        font-size: 1em;         
     }
        
     .grid .aside1 h2{
-        font-size: 1.8em;        
+        font-size: 1.5em;        
     }
     
+    .grid .aside1 p {
+        font-size: 1.2em;
+    }
+
+    .grid .aside1 h3 {
+        font-size: 0.85em;
+    }
+
     .grid .info {
         grid-area: info;
-        padding: 1em;
     }
     
     .grid .info .titulo{
-        text-align: center;
-        font-size: 1.8em;        
+        font-size: 1.5em;        
+    }
+
+    .grid .info .dropdown {
+        font-size: 1.2em;
     }
             
     .grid .info .video p {
-        font-size: 1.5em;  
-        padding: 0em 0.6em;              
+        font-size: 1em;  
+        padding: 0em;
+        margin-top: 3em;              
     }
       
     footer {
@@ -418,3 +438,4 @@ footer #redes p {
 
 }
 
+   
