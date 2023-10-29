@@ -13,7 +13,7 @@
 <body>
     <div id="contenedor_carga">
         <div id="carga">
-          <img src="img/loadinglogoicon.gif" alt="loadinglogoicon">
+          <img src="../img/loadinglogoicon.gif" alt="loadinglogoicon">
         </div>
       </div>
 
@@ -46,26 +46,28 @@
             <p>Diseñamos un lindo santuario para los felimos de Latte Cat Cafe, con el objetivo de albergar gatitos rescatados hasta concretar sus adopciones y al mismo tiempo, ofrecerles a los amantes felinos una experiencia única e increíble junto a ellos. Y por supuesto, acompañado de un buen café y delicias.</p>
         </section>
 
-
-
          <section class="aside1">
             <h2>PORQUE CONTAR NUESTRA HISTORIA?</h2>
-                
-            <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/NqIqs8DGDDxT6fZcqG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/stickers/homesbyaviyyc-arrow-white-outline-NqIqs8DGDDxT6fZcqG">via GIPHY</a></p>
+            <iframe src="https://giphy.com/embed/NqIqs8DGDDxT6fZcqG" width="60%" height="60%" style="position:relative" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </section>
 
         <section class="historia1">
-            <h3>Porque LATTE CAT CAFE se siente parte de la concienciación sobre los muchos beneficios de adoptar un gato como mascota.</h3>
+            <div>
+                <br>
+                <p>Porque LATTE CAT CAFE se siente parte de la concienciación sobre los muchos beneficios de adoptar un gato como mascota.</p>
+                <br>
+            </div>
         </section>
 
         <section class="historia2">
-            <h3>Porque sentimos que en LATTE CAT CAFE hemos logrado combinar el disfrute de la compania de los gatos y familias en un ambiente acogedor y agradable. </h3>
+            <div>
+                <p>Porque sentimos que en LATTE CAT CAFE hemos logrado combinar el disfrute de la compania de los gatos y familias en un ambiente acogedor y agradable. </p>
+            </div>
         </section>
 
-        
         <section class="formu"><br>
             <h1>Formulario Reservas</h1><br>
-            <form id="formu reserva">
+            <form id="formuReserva">
                 <fieldset>
                     <legend>Datos personales</legend>
                     <label for="apellido" name="apellido" id="apellido">Apellido</label>
@@ -79,24 +81,12 @@
                     <br>
                     <label for="dni">DNI</label>
                     <input type="number" name="dni" id="dni" min="1000000" max="99999999" required>
+                    <br>
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" required>
                     <br>
-                    <label for="mascota">Mascota a adoptar</label>
-                    <select id="mascota" name="mascota" required>
-                        <option value="">Seleccionar</option>
-                        <option value="alex">Alex</option>
-                        <option value="anton">Anton</option>
-                        <option value="arturo">Arturo</otion>
-                        <option value="benito">Benito</option>
-                        <option value="carlitos">Carlitos</option>
-                        <option value="felipe">Felipe</option>
-                        <option value="josema">Josema</option>
-                        <option value="kari">Kari</option>
-                        <option value="magnolia">Magnolia</option>
-                        <option value="rita">Rita</option>
-                        <option value="soda">Soda</option>
-                        <option value="tom">Tom</option>
+                    <label for="fecha">Fecha a reservar</label>
+                    <input type="date" id="start" name="trip-start" value="2023-10-01" min="2023-01-01" max="2023-12-31" />
                     </select>
                     <br>
                     <br>
