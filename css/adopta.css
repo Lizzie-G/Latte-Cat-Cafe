@@ -105,9 +105,10 @@ header ul li a:hover {
     grid-area: album;
     background: var(--parrafos);
     display: grid;
+    justify-self: center;
     grid-template-columns: repeat(auto-fit,minmax(18.75em,1fr));
-    gap: 0.625em;
-    width: 80em;
+    gap: 0.9em;
+    width: 85em;
 }
 
 .grid .album img{
@@ -362,7 +363,7 @@ footer #redes p {
 .grid {
     width: 80em;
     display: grid;
-    gap: 5em;
+    gap: 2em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
                          "adopt adopt adopt"
