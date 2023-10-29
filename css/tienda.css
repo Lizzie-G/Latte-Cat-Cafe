@@ -126,6 +126,7 @@ header ul li a:hover {
 .grid .aside1{
     background-color: greenyellow;
     grid-area: aside1;
+    height: 62em;
 }
 
 .grid .aside2{

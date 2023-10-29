@@ -107,6 +107,7 @@ header ul li a:hover {
     height: cover;
     text-align: center;
     padding: 1.5em;
+    align-self: center;
 }
 
 .grid .conten ul img{
@@ -227,6 +228,9 @@ footer #nuestrosDatos .horarios > li {
     font-size: 1em;
 }
 
+footer #direccion p {
+    font-size: 1em;
+}
 
 footer #redes {
     display: inline;
@@ -442,14 +446,15 @@ footer #redes p {
     footer #direccion {
         padding-left: 1em;
         width: fit-content;
-
+        font-size: 80%;
     }
+
     footer #redes {
         width: fit-content;
     }
 
     footer #redes p {
-        font-size: 0.8em;
+        font-size: 80%;
     }
 
     footer #redes img{
