@@ -105,9 +105,10 @@ header ul li a:hover {
     grid-area: album;
     background: var(--parrafos);
     display: grid;
+    justify-self: center;
     grid-template-columns: repeat(auto-fit,minmax(18.75em,1fr));
-    gap: 0.625em;
-    width: 80em;
+    gap: 0.9em;
+    width: 85em;
 }
 
 .grid .album img{
@@ -162,6 +163,14 @@ header ul li a:hover {
     color: var(--fondo);
     padding-top: 1.1em;
     text-align: center;
+}
+
+.grid .aside1 article p {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.6em;
+    color: var(--hover);
+    padding: 0.5em;
+    width: fit-content;
 }
 
 .formu {
@@ -354,7 +363,7 @@ footer #redes p {
 .grid {
     width: 80em;
     display: grid;
-    gap: 5em;
+    gap: 2em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
                          "adopt adopt adopt"
@@ -371,7 +380,7 @@ footer #redes p {
 }
 
 #contenedor_carga {
-    background-color: rgba(250, 240, 245, 0.975);
+    background-color:var(--hover);
     height: 100%;
     width: 100%;
     position: fixed;
