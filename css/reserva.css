@@ -22,6 +22,19 @@ body {
   padding-top: 3.8em;
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--subtitulos);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--hover); 
+  border-radius: 2em;
+}
+
 header {
   background-color: var(--subtitulos);
   width: 100%;
@@ -162,6 +175,13 @@ header ul li a:hover {
   font-family: 'Comfortaa', cursive;
   display: inline;
   justify-self: center;
+<<<<<<< HEAD
+=======
+}
+
+.grid .formu fieldset {
+  width: fit-content;
+>>>>>>> 11baa3d7e758715f98dc631a2829887a3751cc50
 }
 
 .grid .formu h1 {
@@ -201,7 +221,7 @@ header ul li a:hover {
 }
 
 .grid .formu form input[type="text"],
-.grid .formu form input[type="email"] {
+.grid .formu form input[type="mail"] {
   border: 0.06em solid var(--parrafos);
   border-radius: 0.19em;
   background-color: var(--fondo);
@@ -275,7 +295,7 @@ footer #nuestrosDatos ul li {
   display: block;
 }
 
-footer #nuestrosDatos .horarios > li {
+footer #nuestrosDatos .horarios>li {
   padding-left: 1.5em;
   font-size: 1em;
 }
@@ -325,7 +345,8 @@ footer #redes p {
   margin: auto;
 }
 
-*::after,*::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

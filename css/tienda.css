@@ -22,6 +22,19 @@ body {
     padding-top: 3.8em;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--subtitulos);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--hover); 
+    border-radius: 2em;
+}
+
 header {
     background-color: var(--subtitulos);
     width: 100%;
@@ -61,8 +74,7 @@ header ul li a:hover {
     background-color: var(--fondo);
 }
 
-.grid .header{
-    background-color: orange;
+.grid .header {
     grid-area: header;
     display: grid;
     place-content: center;
@@ -70,23 +82,22 @@ header ul li a:hover {
     height: 10.7em;
 }
 
-.grid .header img{
+.grid .header img {
     width: 9em;
-    
 }
 
 .grid .header h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 1.8em;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
-.grid .conten{
+.grid .conten {
     grid-area: conten;
     display: grid;
     place-content: center;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 15px;
+    grid-gap: 1em;
 }
 
 .grid .conten .producto {
@@ -98,14 +109,14 @@ header ul li a:hover {
     background-color: var(--hover);
 }
 
-.grid .conten .producto img{
+.grid .conten .producto img {
     width: fit-content;
     height: 9em;
     overflow-x: hidden;
     object-position: center;
 }
 
-.grid .conten .producto h4{
+.grid .conten .producto h4 {
     color: var(--subtitulos);
     font-family: 'Comfortaa', cursive;
     padding-bottom: 0.6em;
@@ -120,23 +131,26 @@ header ul li a:hover {
     font-weight: bolder;
     padding: 0.5em 0em;
     background-color: var(--parrafos);
-    border: 1px solid var(--subtitulos);
+    border: 0.06em solid var(--subtitulos);
 }
 
-.grid .aside1{
-    background-color: greenyellow;
+.grid .aside1 {
+    background-color: var(--parrafos);
+    border-radius: 1em;
+    color: var(--hover);
     grid-area: aside1;
     height: 62em;
+    padding: 1em;
 }
 
-.grid .aside2{
+.grid .aside2 {
     grid-area: aside2;
     font-size: x-large;
     text-align: center;
-    padding: 20px 0px;
-    margin: 10px 0px;
-    background-color: #C8AE7D;
-    box-shadow: 5px 5px 40px 30px var(--parrafos), inset 0px 2px #261908;
+    padding: 0.5em 0em;
+    margin: 1em 0em;
+    background-color: var(--hover);
+    box-shadow: 0.3em 0.3em 0.8em 0.7em var(--parrafos), inset 0em 0.1em var(--parrafos);
 }
 
 footer {
@@ -168,7 +182,7 @@ footer #nuestrosDatos ul li {
     display: block;
 }
 
-footer #nuestrosDatos .horarios > li {
+footer #nuestrosDatos .horarios>li {
     padding-left: 1.5em;
     font-size: 1em;
 }
@@ -202,20 +216,21 @@ footer #redes p {
 }
 
 .grid {
-    width: 1280px;
+    width: 80em;
     display: grid;
-    gap: 10px;
+    gap: 0.4em;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5);
     grid-template-areas: "header conten conten conten conten"
-                         "aside1 conten conten conten conten"
-                         "aside1 conten conten conten conten"
-                         "aside1 conten conten conten conten"
-                         "aside2 aside2 aside2 aside2 aside2";
+        "aside1 conten conten conten conten"
+        "aside1 conten conten conten conten"
+        "aside1 conten conten conten conten"
+        "aside2 aside2 aside2 aside2 aside2";
     margin: auto;
 }
 
-*.,*: :after,*: :before {
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -248,7 +263,7 @@ footer #redes p {
 
 /* Este es el estilo para tamaño tableta */
 
-@media (max-width: 992px) and (min-width: 600px) {     
+@media (max-width: 992px) and (min-width: 600px) {
     header {
         width: 100%;
     }
@@ -256,167 +271,75 @@ footer #redes p {
     header nav ul {
         padding: 0em;
     }
-    
+
     .grid .conten {
         width: 100%;
     }
-    
+
     .grid .conten ul {
         grid-template-columns: repeat(3, 3fr);
         grid-template-rows: repeat(3, auto);
     }
-    
-    .grid .conten ul .box1, .box7 {
+
+    .grid .conten ul .box1,
+    .box7 {
         font-size: 1.1em;
     }
-    
+
     .grid .info {
         display: grid;
         grid-template-columns: repeat(3, auto);
         overflow-y: auto;
     }
-    
+
     .grid .info article {
         width: 15em;
     }
 
-    .grid .info article img{
+    .grid .info article img {
         width: fit-content;
         height: 10em;
     }
-    
-    .grid .info article h3{
+
+    .grid .info article h3 {
         color: var(--subtitulos);
         font-family: 'Comfortaa', cursive;
         margin: 0.4em 0em;
     }
-    
+
     .grid .info article p {
         padding-top: 6%;
         padding-bottom: 3%;
     }
-    
+
     .grid .info article a {
         padding: 0.4em 5.1em;
     }
-    
+
     .grid .info article a:hover {
         padding: 0.4em 5.1em;
     }
-    
+
     footer {
         font-size: 1em;
     }
-    
-    footer #nuestrosDatos .horarios > li {
+
+    footer #nuestrosDatos .horarios>li {
         font-size: 0.9em;
-    }  
+    }
 
     footer #direccion {
         width: 50em;
         margin-left: 2em;
     }
-    
+
     .grid {
         width: 96%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "header header"
-                             "conten conten"
-                             "aside1 aside1"
-                             "info info"
-                             "aside2 aside2";
-    }   
-}
-
-/* Este es el estilo para tamaño celular */
-
-@media (max-width: 600px) { 
-    header {
-        width: 100%;
-    }
-    
-    .grid .header img {
-        width: 6em;
-        padding-left: 3em;
-    }
-    
-    .grid .header h1 {
-        font-size: 1.8em;
-        color: var(--titulos);
-        width: 5.1em;
-    }
-    
-    .grid .conten {
-        width: 100%;
-    }
-    
-    .grid .conten ul {
-        display: grid;
-        column-gap: 0.06em;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        padding: 0.5em;
-    }
-    
-    .grid .conten ul .box1, .box7 {
-        font-size: 0.9em;
-    }
-    
-    .grid .conten ul .box3, .box6 {
-        display: none;
-    }
-    
-    .grid .aside1 p {
-        font-size: 1.2em;
-    }
-
-    .grid .info {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        overflow-y: auto;
-    }
-    
-    .grid .info article p {
-        padding-bottom: 6%;
-    }
-    
-    footer {
-        width: 100%;
-        display: grid;
-        gap: 0.13em;
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(2, auto);
-    }
-    
-    footer #imgFooter {
-        width: auto;
-        height: 7.8em;
-        padding-left: 1em;
-    }
-    
-    footer #nuestrosDatos {
-        width: fit-content;
-    }
-
-    footer #direccion {
-        padding-left: 1em;
-        width: fit-content;
-
-    }
-
-    footer #redes {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: repeat(2);
-        gap: 1em;
-    }
-
-    footer #redes img{
-        width: 1.2em;
-        height: 1.2em;
-    }  
-    
-    .grid {
-        width: 100%;
+            "conten conten"
+            "aside1 aside1"
+            "info info"
+            "aside2 aside2";
     }
 }

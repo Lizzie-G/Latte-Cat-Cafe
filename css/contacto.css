@@ -22,6 +22,19 @@ body {
     padding-top: 3.8em;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--subtitulos);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--hover); 
+    border-radius: 2em;
+}
+
 header {
     background-color: var(--subtitulos);
     width: 100%;
@@ -224,7 +237,8 @@ header ul li a:hover {
     text-align: center;
     color: var(--hover);
     -webkit-text-stroke: 0.03em var(--parrafos);
-    padding: 2.3em 0em;;
+    padding: 2.3em 0em;
+    ;
     margin: 0%;
 }
 
@@ -303,7 +317,8 @@ footer #redes p {
     ;
 }
 
-*::after,*::before {
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -455,13 +470,13 @@ footer #redes p {
     header ul li {
         padding-bottom: 0.4em;
     }
-  
-   
+
+
     .grid .conten p {
-        font-size: 1.2em;        
+        font-size: 1.2em;
     }
 
-    
+
     .grid .aside1 h2 {
         padding-top: 0.6em;
         border-top: 0.05em var(--parrafos) solid;
@@ -476,15 +491,15 @@ footer #redes p {
     }
 
     .grid .info .titulo {
-        font-size: 2.0em;        
+        font-size: 2.0em;
     }
 
     .grid .info .dropdown {
-        font-size: 1.5em;        
+        font-size: 1.5em;
     }
 
     .grid .info .dropdown-content {
-        text-align: justify;       
+        text-align: justify;
     }
 
     footer {
@@ -512,6 +527,7 @@ footer #redes p {
         width: fit-content;
 
     }
+
     footer #redes {
         width: fit-content;
     }
@@ -520,7 +536,7 @@ footer #redes p {
         font-size: 0.8em;
     }
 
-    footer #redes img{
+    footer #redes img {
         width: 1em;
         height: 1em;
     }
@@ -532,9 +548,9 @@ footer #redes p {
         gap: 0.4em;
         grid-template-columns: 100%;
         grid-template-areas: "header"
-                             "conten"
-                             "aside1"
-                             "info";
-        margin: auto;        
+            "conten"
+            "aside1"
+            "info";
+        margin: auto;
     }
 }
