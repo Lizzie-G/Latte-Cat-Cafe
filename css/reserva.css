@@ -161,6 +161,7 @@ header ul li a:hover {
   color: var(--fondo);
   font-family: 'Comfortaa', cursive;
   display: inline;
+  justify-self: center;
 }
 
 .grid .formu h1 {
