@@ -169,7 +169,7 @@
                         <input type="text" name="apellido" id="apellido" required>
                     </label>
                     <br>
-                    <label for="nombre" name="nombre" id="nombre">nombre
+                    <label for="nombre" name="nombre" id="nombre">Nombre
                         <input type="text" name="nombre" id="nombre" required>
                     </label>
                     <br>
@@ -248,7 +248,13 @@
                     alt="Imagen del logo de Whatsapp"></a>
             <p>Nuestras Redes</p>
         </div>
-    </footer>
+        <script>
+            window.onload = function () {
+                var contenedor = document.getElementById('contenedor_carga');
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+            }
+        </script></footer>
 
     <script>
         window.onload = function () {

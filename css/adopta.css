@@ -123,7 +123,7 @@ header ul li a:hover {
     justify-self: center;
     grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
     gap: 0.9em;
-    width: 81em;
+    width: 85em;
 }
 
 .grid .album img {
