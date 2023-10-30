@@ -22,6 +22,19 @@ body {
   padding-top: 3.8em;
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--subtitulos);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--hover); 
+  border-radius: 2em;
+}
+
 header {
   background-color: var(--subtitulos);
   width: 100%;
@@ -161,9 +174,12 @@ header ul li a:hover {
   color: var(--fondo);
   font-family: 'Comfortaa', cursive;
   display: inline;
+  justify-self: center;
 }
 
-
+.grid .formu fieldset {
+  width: fit-content;
+}
 
 .grid .formu h1 {
   color: var(--fondo);
@@ -276,7 +292,7 @@ footer #nuestrosDatos ul li {
   display: block;
 }
 
-footer #nuestrosDatos .horarios > li {
+footer #nuestrosDatos .horarios>li {
   padding-left: 1.5em;
   font-size: 1em;
 }
@@ -326,7 +342,8 @@ footer #redes p {
   margin: auto;
 }
 
-*::after, *::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

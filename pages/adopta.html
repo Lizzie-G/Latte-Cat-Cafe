@@ -160,7 +160,7 @@
         </section>
 
 
-        <section class="formu"><br>
+        <section class="formu">
             <h1>Formulario para adopcion de Mascotas</h1><br>
             <form id="formuadopcion">
                 <fieldset>
@@ -181,8 +181,8 @@
                         <input type="number" name="dni" id="dni" min="1000000" max="99999999" required>
                     </label>
                     <br>
-                    <label for="email">E-mail
-                        <input type="email" name="email" id="email" required>
+                    <label for="mail">E-mail
+                        <input type="mail" name="mail" id="email" required>
                     </label>
                     <br>
                     <label for="mascota">Mascota a adoptar
@@ -205,13 +205,15 @@
                     <br>
                     <br>
                     <label for="mensaje">Mensaje
-                        <textarea id="mensaje" name="mensaje" cols="60" rows="10" resize="none" required
+                        <textarea id="mensaje" name="mensaje" cols="40" rows="5" resize="none" required
                             placeholder="Contanos en un breve resumen porque quieres una mascota">
                         </textarea>
                     </label>
                     <input type="submit" name="submit" value="Enviar Datos">
                 </fieldset>
             </form>
+            <a href="../Formularios/contratoDeAdopcion.pdf"
+                download="Latte Cat Cafe - Contrato de adopción.pdf">Formulario de adopción</a>
         </section>
     </div>
 
@@ -226,17 +228,14 @@
                     <li>Sabados y Domingos</li>
                     <li>9:00 a 22:00</li>
                 </ul>
-                <li>Terminos y condiciones</li>
+                <li><a href="Formularios/reglas.pdf" target="_blank" rel="noopener">Reglas de convivencia</a></li>
             </ul>
         </div>
         <div id="direccion">
             <p>Dirección: Av. Cabildo 1905 (CABA)</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6570.230535121337!2d-58.42162128173575!3d-34.57594982407377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698101801461!5m2!1ses-419!2sar"
-                width="140" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button onclick="getLocation()">Dime donde estás y te digo como llegar</button>
-                <p id="demo"></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5993104434883!2d-58.45749402425302!3d-34.56369925538581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3db8e7ad1%3A0xe2c28d03dbf8db29!2sAv.%20Cabildo%201905%2C%20C1428AAB%20CABA!5e0!3m2!1ses-419!2sar!4v1698628973625!5m2!1ses-419!2sar" width="140" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button onclick="getLocation()">Dime donde estás y te digo como llegar</button>
+            <p id="demo"></p>
         </div>
         <div id="redes">
             <a href="https://www.facebook.com/"><img src="../img/redes/facebook.jpg"
@@ -251,6 +250,13 @@
         </div>
     </footer>
 
+    <script>
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
     <script src="../js/formulario.js"></script>
 
 </body>
