@@ -163,6 +163,8 @@ header ul li a:hover {
   display: inline;
 }
 
+
+
 .grid .formu h1 {
   color: var(--fondo);
   font-size: 3em;
@@ -324,7 +326,7 @@ footer #redes p {
   margin: auto;
 }
 
-*::after,*::before {
+*::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

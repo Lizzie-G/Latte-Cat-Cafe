@@ -56,9 +56,8 @@ addEvent(form, "submit", function () {
   }
 });
 
-// API REST Google Maps
+// API REST geolocalización
 
-// API geolocalizacion
 const x = document.getElementById("demo");
 
 function getLocation() {

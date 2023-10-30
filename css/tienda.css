@@ -215,11 +215,11 @@ footer #redes p {
     margin: auto;
 }
 
-*.,*: :after,*: :before {
+*::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
 #contenedor_carga {
     background-color: var(--hover);
