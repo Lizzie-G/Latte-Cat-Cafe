@@ -67,7 +67,8 @@
 
         <section class="formu"><br>
             <h1>Formulario Reservas</h1><br>
-            <form id="formuReserva">
+            <form id="formReserva" action="https://formsubmit.co/liziegrosso@gmail.com" method="POST">
+
                 <fieldset>
                     <legend>Datos personales</legend>
                     <label for="apellido" name="apellido" id="apellido">Apellido
@@ -83,7 +84,7 @@
                     </label>
                     <br>
                     <label for="dni">DNI
-                        <input type="number" name="dni" id="dni" min="1000000" max="99999999" required>
+                        <!-- <input type="number" name="dni" id="dni" min="1000000" max="99999999" step="1" required> -->
                     </label>
                     <br>
                     <label for="mail">E-mail
@@ -102,7 +103,7 @@
                             placeholder="Contanos en un breve resumen porque quieres una mascota">
                         </textarea>
                     </label>
-                    
+
                     <input type="submit" name="submit" value="Enviar Datos">
                 </fieldset>
             </form>
@@ -146,6 +147,7 @@
           contenedor.style.opacity ='0';
         }
       </script>
+      <script src="../js/formulario.js"></script>
 </body>
 
 </html>

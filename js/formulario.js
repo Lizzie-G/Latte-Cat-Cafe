@@ -1,9 +1,10 @@
 const form = document.getElementsByTagName("form")[0];
 const mail = document.getElementById("mail");
+const dni = document.getElementById("dni");
 
 // Validación del e-mail de los formularios
 
-let error = email;
+let error = mail;
 while ((error = error.nextSibling).nodeType != 1);
 
 const emailRegExp =
@@ -23,43 +24,52 @@ function addEvent(element, event, callback) {
   };
 }
 
-// Ahora podemos reconstruir nuestra restricción de validación
-// Debido a que no confiamos en la pseudoclase de CSS, tenemos que
-// establecer explícitamente la clase valid/invalid en nuestro campo de correo electrónico
 addEvent(window, "load", function () {
-  // Aquí probamos si el campo está vacío (recuerda, el campo no es obligatorio)
-  // Si no es así, verificamos si su contenido es una dirección de correo electrónico con el formato correcto.
-  const test = email.value.length === 0 || emailRegExp.test(email.value);
-
-  email.className = test ? "valid" : "invalid";
+  const test = mail.value.length === 0 || emailRegExp.test(mail.value);
+  mail.className = test ? "valid" : "invalid";
 });
 
-// Esto define lo que sucede cuando el usuario escribe en el campo
-addEvent(email, "input", function () {
-  const test = email.value.length === 0 || emailRegExp.test(email.value);
+addEvent(mail, "input", function () {
+  const test = mail.value.length === 0 || emailRegExp.test(mail.value);
   if (test) {
-    email.className = "valid";
+    mail.className = "valid";
     error.innerHTML = "";
     error.className = "error";
   } else {
-    email.className = "invalid";
+    mail.className = "invalid";
   }
 });
 
-// Esto define lo que sucede cuando el usuario intenta enviar los datos.
 addEvent(form, "submit", function () {
-  const test = email.value.length === 0 || emailRegExp.test(email.value);
+  const test = mail.value.length === 0 || emailRegExp.test(mail.value);
 
   if (!test) {
-    email.className = "invalid";
-    error.innerHTML = "Espero un correo electrónico, querido!";
+    mail.className = "invalid";
+    error.innerHTML = "Verifica el correo electrónico, gracias";
     error.className = "error active";
 
-    // Algunos navegadores antiguos no son compatibles con el método event.preventDefault ()
     return false;
   } else {
-    email.className = "valid";
+    mail.className = "valid";
     error.innerHTML = "";
     error.className = "error";
   }
 });
+
+// API REST Google Maps
+
+// API geolocalizacion
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}

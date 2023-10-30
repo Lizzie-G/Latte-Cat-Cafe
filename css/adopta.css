@@ -384,11 +384,11 @@ footer #redes p {
     height: 100%;
     width: 100%;
     position: fixed;
-    transition: all 3s ease;
-    -webkit-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
+    transition: all 1ms ease;
+    -webkit-transition: all 1ms ease;
+    -moz-transition: all 1ms ease;
+    -ms-transition: all 1ms ease;
+    -o-transition: all 1ms ease;
     z-index: 10000;
 }
 
