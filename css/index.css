@@ -327,54 +327,6 @@ footer #redes p {
         padding: 0em;
     }
 
-    .grid .conten {
-        width: 100%;
-    }
-
-    .grid .conten ul {
-        grid-template-columns: repeat(3, 3fr);
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .grid .conten ul .box1,
-    .box7 {
-        font-size: 1.1em;
-    }
-
-    .grid .info {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        overflow-y: auto;
-    }
-
-    .grid .info article {
-        width: 15em;
-    }
-
-    .grid .info article img {
-        width: fit-content;
-        height: 10em;
-    }
-
-    .grid .info article h3 {
-        color: var(--subtitulos);
-        font-family: 'Comfortaa', cursive;
-        margin: 0.4em 0em;
-    }
-
-    .grid .info article p {
-        padding-top: 6%;
-        padding-bottom: 3%;
-    }
-
-    .grid .info article a {
-        padding: 0.4em 5.1em;
-    }
-
-    .grid .info article a:hover {
-        padding: 0.4em 5.1em;
-    }
-
     footer {
         font-size: 1em;
     }
@@ -415,71 +367,13 @@ footer #redes p {
         padding-bottom: 0.4em;
     }
 
-    .grid .header img {
-        width: 6em;
-        padding-left: 3em;
-    }
-
-    .grid .header h1 {
-        font-size: 1.8em;
-        color: var(--titulos);
-        width: 5.1em;
-    }
-
-    .grid .conten {
-        width: 100%;
-    }
-
-    .grid .conten ul {
-        display: grid;
-        column-gap: 0.06em;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        padding: 0.5em;
-    }
-
-    .grid .conten ul .box1,
-    .box7 {
-        font-size: 0.9em;
-    }
-
-    .grid .conten ul .box3,
-    .box6 {
-        display: none;
-    }
-
-    .grid .aside1 p {
-        font-size: 1.2em;
-    }
-
-    .grid .info {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        overflow-y: auto;
-    }
-
-    .grid .info article {
-        width: 16.8em;
-    }
-
-    .grid .info article a {
-        padding: 0.4em 6em;
-    }
-
-    .grid .info article a:hover {
-        padding: 0.4em 6em;
-    }
-
-    .grid .info article p {
-        padding-bottom: 6%;
-    }
-
     footer {
         width: 100%;
         display: grid;
         gap: 0.4em;
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(2, auto);
+        justify-items: center;
     }
 
     footer #imgFooter {
@@ -502,6 +396,7 @@ footer #redes p {
 
     footer #redes {
         width: fit-content;
+        margin: 0.2em;
     }
 
     footer #redes p {
