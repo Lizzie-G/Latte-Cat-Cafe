@@ -2,7 +2,6 @@
 /* Tipografía para titulos font-family: 'Comfortaa', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 /* Tipografía para textos  font-family: 'Pompiere', cursive;*/
-
 :root {
     --fondo: #efe1cf;
     --hover: #C8AE7D;
@@ -10,18 +9,15 @@
     --subtitulos: #65451F;
     --parrafos: #261908;
 }
-
 * {
     width: 100%;
     margin: 0px;
 }
-
 body {
     font-family: 'Pompiere', cursive;
     background-color: var(--fondo);
     padding-top: 55px;
 }
-
 header {
     background-color: var(--subtitulos);
     width: 100%;
@@ -30,49 +26,40 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
-    left: 0;
+    z-index: 1;
 }
-
 header ul {
     display: inline;
     height: 44px;
 }
-
 header ul li {
     display: inline-block;
     width: fit-content;
     margin-top: 10px;
 }
-
 header ul li :hover {
     background-color: var(--hover);
     color: var(--fondo);
     margin: 20px;
 }
-
 header ul li a {
     text-decoration: none;
     color: var(--parrafos);
     padding: 11px;
 }
-
 header ul li a:hover {
     color: var(--subtitulos);
     background-color: var(--fondo);
 }
-
-
 .grid .header {
     grid-area: header;
     display: inline;
 }
-
 .grid .header img {
     width: 150px;
     float: left;
     padding-left: 80px;
 }
-
 .grid .header h1 {
     font-size: xx-large;
     color: var(--titulos);
@@ -81,75 +68,69 @@ header ul li a:hover {
     padding-top: 45px;
     padding-right: 120px;
 }
-
 .grid .conten {
     background-color: #000;
     grid-area: conten;
     box-shadow: 5px 5px 40px 30px var(--parrafos), inset 0px 2px #261908;
+    width: 1280px;
 }
-
 .grid .conten ul {
     list-style: none;
     display: grid;
     column-gap: 1px;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 220px);
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(3, 230px);
     width: fit-content;
     padding: 10px;
 }
-
 .grid .conten ul .box1, .box7 {
     background-color: var(--hover);
     color: var(--parrafos);
-    font-size: medium;
+    font-size: 20px;
     width: fit-content;
     height: cover;
+    text-align: center;
     padding: 22px;
 }
-
 .grid .conten ul img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
-
 .grid .conten ul .box3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-
 .grid .conten ul .box4 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
 }
-
 .grid .conten ul .box4:hover {
     background-image: url(videos/mimos.mp4);
 }
-
 .grid .aside1 {
     grid-area: aside1;
     text-align: center;
+    background-color: var(--parrafos);
+    color: var(--fondo);
+    box-shadow: #65451F 1px 2px 5px 4px;
 }
  .grid .aside1 p {
     font-size: 24px;
-    font-weight: bolder;
     text-align: center;
     padding: 10px 50px;
     width: fit-content;
  }
-
 .grid .info {
     grid-area: info;
     display: inline;
     text-align: center;
 }
-
 .grid .info article {
     border: 1px solid var(--titulos);
     width: 300px;
@@ -160,76 +141,70 @@ header ul li a:hover {
     display: inline-block;
     margin: 0px 10px;
 }
-
 .grid .info article img{
     width: fit-content;
     height: 200px;
     overflow-x: hidden;
     object-position: center;
 }
-
 .grid .info article h3{
     color: var(--subtitulos);
     font-family: 'Comfortaa', cursive;
     margin: 10px 0px;
 }
-
 .grid .info article p {
     padding-bottom: 6%;
 }
-
 .grid .info article a {
     text-decoration: none;
     color: var(--parrafos);
     background-color: var(--fondo);
     padding: 10px 112px;
 }
-
 .grid .info article a:hover {
     text-decoration: none;
     color: var(--fondo);
     background-color: var(--parrafos);
     padding: 10px 112px;
 }
-
 .grid .aside2 {
     grid-area: aside2;
 }
-
-.grid .footer {
+footer {
     background-color: var(--subtitulos);
     color: var(--fondo);
-    font-size: 18px;    
-    grid-area: footer;
+    font-size: 18px;
     display: inline-flex;
-    bottom: 0;
-    position: 0;
+    padding: 4px 0px;
+    align-items: center;
 }
-
-.grid .footer #imgFooter {
+footer #imgFooter {
     float: left;
     width: auto;
     height: 140px;
     margin-right: 50px;
 }
-
-.grid .footer #nuestrosDatos ul {
-    display: inline;
+footer #nuestrosDatos {
+    width: 400px;
 }
-
-.grid .footer #nuestrosDatos ul li {
+footer #nuestrosDatos ul {
+    display: inline;
+    padding: 0px;
+}
+footer #nuestrosDatos ul li {
     display: block;
 }
-
-.grid .footer #redes {
+footer #nuestrosDatos .horarios > li {
+    padding-left: 20px;
+    font-size: 16px;
+}
+footer #redes {
     display: inline;
     text-align: center;
-    width: 400px;
-    margin-top: 30px;
-    margin-right: 50px;
+    width: 600px;
+    margin: 0px 50px;
 }
-
-.grid .footer #redes img {
+footer #redes img {
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -239,14 +214,13 @@ header ul li a:hover {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
-
-.grid .footer #redes p {
-    display: inline-block;
-          
-}
+ }
+footer #redes p {
+ display: inline-block;
+ }
 
 .grid {
+    width: 1280px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
@@ -254,6 +228,200 @@ header ul li a:hover {
                          "conten conten conten"
                          "aside1 aside1 aside1"
                          "info info info"
-                         "aside2 aside2 aside2"
-                         "footer footer footer";
+                         "aside2 aside2 aside2";
+    margin: auto;
 }
+/* Este es el estilo para tamaño tableta */
+@media (max-width: 992px) and (min-width: 600px) {     
+    header {
+        width: 992px;
+    }
+    header nav ul {
+        padding: 0px;
+    }
+    
+    .grid .conten {
+        width: 960px;
+    }
+    
+    .grid .conten ul {
+        grid-template-columns: repeat(3, 312px);
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    .grid .conten ul .box1, .box7 {
+        font-size: 18px;
+    }
+    
+    .grid .info {
+        grid-area: info;
+        display: inline;
+        text-align: center;
+    }
+    
+    .grid .info article {
+        width: 250px;
+    }
+    .grid .info article img{
+        width: fit-content;
+        height: 170px;
+    }
+    
+    .grid .info article h3{
+        color: var(--subtitulos);
+        font-family: 'Comfortaa', cursive;
+        margin: 10px 0px;
+    }
+    
+    .grid .info article p {
+        padding-top: 6%;
+        padding-bottom: 3%;
+    }
+    
+    .grid .info article a {
+        padding: 10px 87px;
+    }
+    
+    .grid .info article a:hover {
+        padding: 10px 87px;
+    }
+    
+    footer {
+        font-size: 16px;
+    }
+    
+    footer #nuestrosDatos .horarios > li {
+        font-size: 14px;
+    }  
+    footer #direccion {
+        width: 800px;
+        margin-left: 30px;
+    }
+    
+    .grid {
+        width: 960px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "header header"
+                             "conten conten"
+                             "aside1 aside1"
+                             "info info"
+                             "aside2 aside2";
+        margin: auto;
+    }   
+}
+/* Este es el estilo para tamaño celular */
+@media (max-width: 600px) { 
+    header {
+        width: 600px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .grid .conten {
+        width: 560px;
+    }
+    
+    .grid .header img {
+        width: 100px;
+        padding-left: 40px;
+    }
+    
+    .grid .header h1 {
+        font-size: xx-large;
+        color: var(--titulos);
+        width: 150px;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+    
+    .grid .conten {
+        width: 560px;
+    }
+    
+    .grid .conten ul {
+        list-style: none;
+        display: grid;
+        column-gap: 1px;
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: repeat(3, 230px);
+        width: fit-content;
+        padding: 10px;
+    }
+    
+    .grid .conten ul .box1, .box7 {
+        background-color: var(--hover);
+        color: var(--parrafos);
+        font-size: 16px;
+        width: fit-content;
+        height: cover;
+        text-align: center;
+        padding: 22px;
+    }
+    
+    .grid .conten ul img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    .grid .conten ul .box3, .box6 {
+        display: none;
+    }
+    
+    .grid .info {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        overflow-y: auto;
+    }
+    
+    .grid .info article p {
+        padding-bottom: 6%;
+    }
+    
+    .grid .info article a {
+        padding: 10px 87px;
+    }
+    
+    .grid .info article a:hover {
+        padding: 10px 87px;
+    }
+
+    footer {
+        width: 560px;
+        display: grid;
+        gap: 2px;
+        grid-template-columns: repeat(2, 290px);
+@ -449,25 +450,23 @@ footer #redes p {
+        height: 140px;
+        padding-left: 20px;
+    }
+
+    footer #nuestrosDatos {
+        width: 250px;
+    }
+
+    footer #direccion {
+        width: 250px;
+        padding-left: 20px;
+    }
+
+    footer #redes {
+        width: 220px;
+        width: 180px;
+        margin-right: 40px;
+    }
+
+    .grid {
+        width: 560px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(1);
+        grid-template-areas: "header"
+                             "conten"
+                             "aside1"
+                             "info";
+        margin: auto;
+    }
